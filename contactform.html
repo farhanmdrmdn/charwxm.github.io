@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Contact Form</title>
+    
+    <style>
+      .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+
+  
+  <body>
+    <header>
+        <nav>
+          <div class="menu-icon">
+         <i class="fa fa-bars fa-2x"></i>
+         </div>
+        <div class="logo">
+          CHAR WAN
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contactform.html">Contact</a></li>
+           </ul>
+        </div>
+      </nav>
+    </header>
+
+<br/>
+<br/>
+<br/>
+
+    <div class="container">
+        <form action="action_page.php" method="GET">
+      
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" size="50" placeholder="Your name"><br>
+          <br>
+      
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" size="50" placeholder="Email address"><br>
+          <br>
+      
+          <label for="subject">Tell me more</label><br>
+          <textarea id="subject" name="subject" rows="10" cols="43" placeholder="Write something.."></textarea>
+          <br>
+          <br>
+      
+          <!--<input type="submit" value="Submit">-->
+          <button class="button button1">Submit</button>
+      
+        </form>
+
+        <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="floatRight" width="400" height="400"> 
+      </div>
+
+  </body>
