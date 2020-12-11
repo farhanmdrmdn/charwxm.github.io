@@ -45,7 +45,7 @@
   {
     "filename": "dualtone_3seatersofa1.jpg",
     "title": "Dualtone 3 Seater Sofa",
-    "type": "sofa",
+    "type": "furniture",
     "description": "Perched on wooden legs, this sofa infuses durability with the comfort with its medium firm cushioning and high-quality fabric. ",
     "height": 81,
     "width": 180,
@@ -72,7 +72,7 @@
   {
     "filename": "isabella_floorlamp1.jpg",
     "title": "Isabella Floor Lamp",
-    "type": "Lamp",
+    "type": "lamp",
     "description": "A timeless piece, the Isabella Floor Lamp is designed with a refined look in mind. With its slim metal lamp stand and neutral coloured lamp",
     "height": 160,
     "width": 28,
@@ -81,7 +81,7 @@
   {
     "filename": "linate_coffeetable1.jpg",
     "title": "Linate Coffee Table",
-    "type": "Table",
+    "type": "table",
     "description": "The furniture is also designed to look as though it lightly ‘floats’ above the ground, while showcasing the precision and strength of its design as a sturdy, stable piece of furniture.",
     "height": 33,
     "width": 100,
