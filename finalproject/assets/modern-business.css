@@ -20,3 +20,37 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.jumbotron {
+    background-image: url("img/shop_all_banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+}
+
+.socialMedias{
+text-align:center;
+}
+
+#image1{
+padding:20px;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+#signinpaddingtop {
+  padding-top: 60px;
+}
+
+.socialMedias{
+text-align:center;
+}
+
+#image1{
+padding:20px;
+}
+#image1:hover {
+background:blue;
+}
