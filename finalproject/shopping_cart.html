@@ -15,19 +15,14 @@
   <!-- Custom styles for this template -->
   <link href="assets/modern-business.css" rel="stylesheet" />
 
-  <style>
-    .padding-top {
-      padding-top: 50px;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Navigation -->
+  <!-- Navigation Bar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" height="80" />
+        <img src="assets/img/logo.png" height="80" />
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -126,18 +121,23 @@
     <!-- Cart Listing Content -->
 
 
-    <hr />
+
 
     <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias,
-          expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo
-          praesentium cum alias asperiores commodi.
-        </p>
+    <div class="products-container">
+
+      <div class="product-header">
+          <h6 class="product-title">Product</h6>
+          <h6 class="price">Price</h6>
+          <h6 class="quantity">Quantity</h6>
+          <h6 class="total">Total</h6>
       </div>
-      <div class="col-md-4">
+
+      <div class="products"></div>
+
+      </div>
+
+      <div class="checkOut btn">
         <a class="btn btn-lg btn-secondary btn-block" href="#">Check out</a>
       </div>
     </div>
@@ -147,9 +147,14 @@
   <!-- Footer -->
   <footer class="py-5 bg-white">
     <div class="container">
+      <div class="socialMedias">
+        <img id="image1" src="assets/img/instag.jpg" width="100px" height="100px" alt="instagram-image"></a>
+        <img id="image1" src="assets/img/Twitter.png" width="150px" height="150px" alt="Twitter-image"></a>
+        <img src="assets/img/facebook.png" width="150px" height="150px" alt="facebook-image"></a>
+        <img src="assets/img/whatsapp logo.png" width="120px" height="80px" alt="whats-app-image">
+      </div>
       <p class="m-0 text-center text-black">Copyright &copy; CDF 2020</p>
     </div>
-    <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
