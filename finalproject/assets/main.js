@@ -75,6 +75,8 @@ let products = [
         },
 ]
 
+// "Add to cart" Function column
+
 for (let i = 0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
                 cartNumbers(products[i]);
@@ -151,9 +153,46 @@ function totalCost(product) {
 function displayCart() {
         let cartItems= localStorage.getItem("productsInCart");
         cartItems = JSON.parse(cartItems);
-
-        console.log(cartItems);
+        let productContainer = document.querySelector
+        (".product-container");
+        if( cartItems && productContainer) {
+                console.log("running");
+        }
 }
 
 onLoadCartNumbers();
 displayCart();
+
+// fetch data function
+
+function fetchUserData() {
+        fetch('product.json')
+        .then(response => response.json())
+        .then(users => {
+            let output = '<h2>List of Users</h2>';
+            output += '<ul>';
+                users.forEach(function(user) {
+                    output += `
+                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                    <div class="card h-100">
+                      <a href="#"><img
+                          class="card-img-top"
+                          src="assets/img/product/linate_coffeetable1.jpeg"
+                          height="350"
+                          alt=""
+                      /></a>
+                      <div class="card-body">
+                        <h4 class="card-title">Linate Coffee Table</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <a class="add-cart cart12" href="#">Add Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                `;
+                });
+                output +='</ul>';
+                document.getElementById("response").innerHTML = output;
+        });
+    }
