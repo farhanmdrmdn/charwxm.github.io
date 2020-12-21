@@ -45,7 +45,8 @@ padding:20px;
 }
 
 .socialMedias{
-text-align:center;
+  text-align:center;
+  width:100%;
 }
 
 #image1 {
@@ -54,6 +55,35 @@ padding: 20px;
 
 #image1:hover {
 background:blue;
+}
+
+.m-0{
+  padding: 20px 0;
+}
+
+.footer{
+  background-color:silver;
+}
+
+#test{
+  height:180px;
+  padding-top: 20px;
+}
+
+.footer_one{
+  width:50%;
+  float:left;
+  padding-left:50px;
+}
+
+.footer_two{
+  width:50%;
+  float:right;
+  padding-left: 100px;
+}
+
+.footer_two ul{
+  padding-left:20px;
 }
 
 
