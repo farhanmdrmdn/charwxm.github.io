@@ -65,6 +65,8 @@ background:blue;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .product-header {
@@ -77,35 +79,32 @@ background:blue;
 }
 
 .product-title {
-    width: 45%
+    width: 20%
 }
 
 .price {
-    width: 45%
-    border-bottom: 4px solid lightgrey;
+    width: 20%;
     display: flex;
     align-items: center;
 }
 
 .quantity {
-    width: 30%
-    border-bottom: 1px solid lightgrey
+    width: 20%;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .total {
-    width: 5%
-    border-bottom: 1px solid lightgrey;
+    width: 5%;
     display: flex;
     align-items: center;
 }
 
 .product {
-    width: 45%
+    width: 45%;
     border-bottom: 4px solid lightgrey;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 10px ;
 }
