@@ -4,22 +4,22 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
+    padding-top: 56px;
 }
 
 .carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+} 
 
 .jumbotron {
     background-image: url("img/shop_all_banner.webp");
@@ -28,33 +28,10 @@ body {
     padding-top: 250px;
 }
 
-.socialMedias {
-text-align:center;
-}
+/* ------Cart Page------- */
 
-#image1{
-padding:20px;
-}
-
-.padding-top {
-  padding-top: 50px;
-}
-
-#signinpaddingtop {
-  padding-top: 60px;
-}
-
-.socialMedias{
-  text-align:center;
-  width:100%;
-}
-
-#image1 {
-padding: 20px;
-}
-
-#image1:hover {
-background:blue;
+.container {
+    padding-top: 30px;
 }
 
 .m-0{
@@ -95,6 +72,8 @@ background:blue;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .product-header {
@@ -104,38 +83,72 @@ background:blue;
     justify-content: flex-start;
     border-bottom: 4px solid lightgrey;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .product-title {
-    width: 45%
+    width: 20%
 }
 
 .price {
-    width: 45%
-    border-bottom: 4px solid lightgrey;
+    width: 20%;
     display: flex;
     align-items: center;
 }
 
 .quantity {
-    width: 30%
-    border-bottom: 1px solid lightgrey
+    width: 20%;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .total {
-    width: 5%
-    border-bottom: 1px solid lightgrey;
+    width: 5%;
     display: flex;
     align-items: center;
 }
 
 .product {
-    width: 45%
+    width: 45%;
     border-bottom: 4px solid lightgrey;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 10px ;
 }
+
+.checkOut {
+    padding-top: 50px;
+    margin-left: -15px;
+}
+
+/*-------Footer--------*/
+
+.socialMedias {
+  text-align:center;
+}
+
+#image1{
+  padding:20px;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+#signinpaddingtop {
+  padding-top: 60px;
+}
+
+.socialMedias{
+  text-align:center;
+}
+
+#image1 {
+  padding: 20px;
+}
+
+#image1:hover {
+  background:blue;
+}
+
