@@ -28,12 +28,44 @@ body {
     padding-top: 250px;
 }
 
-
 /* ------Cart Page------- */
 
 .container {
     padding-top: 30px;
 }
+
+.m-0{
+  padding: 20px 0;
+}
+
+.footer{
+  background-color:silver;
+}
+
+#test{
+  height:180px;
+  padding-top: 20px;
+}
+
+.footer_one{
+  width:50%;
+  float:left;
+  padding-left:50px;
+}
+
+.footer_two{
+  width:50%;
+  float:right;
+  padding-left: 100px;
+}
+
+.footer_two ul{
+  padding-left:20px;
+}
+
+
+
+/* ------Cart Page------- */
 
 .products-container {
     max width: 650px;
