@@ -4,22 +4,22 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
+    padding-top: 56px;
 }
 
 .carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+} 
 
 .jumbotron {
     background-image: url("img/shop_all_banner.webp");
@@ -28,37 +28,12 @@ body {
     padding-top: 250px;
 }
 
-.socialMedias {
-text-align:center;
-}
-
-#image1{
-padding:20px;
-}
-
-.padding-top {
-  padding-top: 50px;
-}
-
-#signinpaddingtop {
-  padding-top: 60px;
-}
-
-.socialMedias{
-text-align:center;
-}
-
-#image1 {
-padding: 20px;
-}
-
-#image1:hover {
-background:blue;
-}
-
-
 
 /* ------Cart Page------- */
+
+.container {
+    padding-top: 30px;
+}
 
 .products-container {
     max width: 650px;
@@ -76,6 +51,7 @@ background:blue;
     justify-content: flex-start;
     border-bottom: 4px solid lightgrey;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .product-title {
@@ -108,3 +84,39 @@ background:blue;
     justify-content: space-around;
     padding: 10px ;
 }
+
+.checkOut {
+    padding-top: 50px;
+    margin-left: -15px;
+}
+
+/*-------Footer--------*/
+
+.socialMedias {
+  text-align:center;
+}
+
+#image1{
+  padding:20px;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+#signinpaddingtop {
+  padding-top: 60px;
+}
+
+.socialMedias{
+  text-align:center;
+}
+
+#image1 {
+  padding: 20px;
+}
+
+#image1:hover {
+  background:blue;
+}
+
