@@ -179,6 +179,10 @@ function displayCart() {
                                         <span>${item.inCart}</span>
                                         <ion-icon name="caret-forward-outline"></ion-icon>
                                 </div>
+
+                                <div class="totalCart">
+                                        ${item.inCart * item.price}
+                                </div>
                         `
                 });
         }
