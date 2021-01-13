@@ -3,73 +3,73 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
         {
                 name: "Asher Tall Shelf",
-                tag: "asher_tallshelf1.jpg",
+                tag: "asher_tallshelf1",
                 price: 150,
                 inCart: 0
         },
         {
                 name: "Axel Side Chair",
-                tag: "axel_seide_chair1.jpg",
+                tag: "axel_side_chair1",
                 price: 100,
                 inCart: 0
         },
         {
                 name: "Bruno Dining Table",
-                tag: "bruno_diningtable1.jpg",
+                tag: "bruno_diningtable1",
                 price: 1040,
                 inCart: 0
         },
         {
-                name: "Claire Dinner Plates Set",
-                tag: "clare_dinnerplateset1.jpg",
+                name: "Clare Dinner Plates Set",
+                tag: "clare_dinnerplateset1",
                 price: 54.8,
                 inCart: 0
         },
         {
                 name: "Dual Tone 3 Seater Sofa",
-                tag: "dualtone_3seatersofa1.jpg",
+                tag: "dualtone_3seatersofa1",
                 price: 399,
                 inCart: 0
         },
         {
                 name: "Emelie Tv Console",
-                tag: "emelie_tvconsole1.jpg",
+                tag: "emelie_tvconsole1",
                 price: 399,
                 inCart: 0
         },
         {
                 name: "Grasshoppa Floor Lamp",
-                tag: "grasshoppa_floorlamp1.jpg",
+                tag: "grasshoppa_floorlamp1",
                 price: 149,
                 inCart: 0
         },
         {
                 name: "Isabella Floor Lamp",
-                tag: "isabella_floorlamp1.jpg",
+                tag: "isabella_floorlamp1",
                 price: 179,
                 inCart: 0
         },
         {
                 name: "Linate Cofee Table",
-                tag: "linate_coffeetable1.jpg",
+                tag: "linate_coffeetable1",
                 price: 1279,
                 inCart: 0
         },
         {
                 name: "Reagan Book Shelf",
-                tag: "reagan_bookshelf1.jpg",
+                tag: "reagan_bookshelf1",
                 price: 899,
                 inCart: 0
         },
         {
                 name: "Isabella Floor Lamp",
-                tag: "isabella_floorlamp1.jpg",
+                tag: "isabella_floorlamp1",
                 price: 179,
                 inCart: 0
         },
         {
                 name: "Linate Cofee Table",
-                tag: "linate_coffeetable1.jpg",
+                tag: "linate_coffeetable1",
                 price: 1279,
                 inCart: 0
         },
@@ -150,13 +150,41 @@ function totalCost(product) {
         }
 }
 
+// Shopping cart display
+
 function displayCart() {
-        let cartItems= localStorage.getItem("productsInCart");
+        let cartItems = localStorage.getItem("productInCart");
         cartItems = JSON.parse(cartItems);
         let productContainer = document.querySelector
-        (".product-container");
-        if( cartItems && productContainer) {
-                console.log("running");
+                (".products");
+        
+        console.log(cartItems);
+        if( cartItems && productContainer ) {
+                productContainer.innerHTML = '';
+                Object.values(cartItems).map(item => {
+                        productContainer.innerHTML += `
+
+                                <div class = "products">
+                                        <ion-icon name="close-circle-outline"></ion-icon>
+                                        <img src="assets/img/product/${item.tag}.jpeg" class="p3">
+                                        <span>${item.name}</span>                      
+                                </div>
+                                
+                                <div class = "priceCart">
+                                        ${item.price}
+                                </div>
+
+                                <div class = "quantityCart">
+                                        <ion-icon name="caret-back-outline"></ion-icon>
+                                        <span>${item.inCart}</span>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                </div>
+
+                                <div class="totalCart">
+                                        ${item.inCart * item.price}
+                                </div>
+                        `
+                });
         }
 }
 
