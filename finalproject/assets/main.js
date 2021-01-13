@@ -163,26 +163,24 @@ function displayCart() {
                 productContainer.innerHTML = '';
                 Object.values(cartItems).map(item => {
                         productContainer.innerHTML += `
-                                <div class="row">
-                                <div class = "products col">
+                                <div class = "products">
                                         <ion-icon name="close-circle-outline"></ion-icon>
                                         <img src="assets/img/product/${item.tag}.jpeg" class="p3">
                                         <span>${item.name}</span>                      
                                 </div>
                                 
-                                <div class = "priceCart col">
+                                <div class = "priceCart">
                                         ${item.price}
                                 </div>
 
-                                <div class = "quantityCart col">
+                                <div class = "quantityCart">
                                         <ion-icon name="caret-back-outline"></ion-icon>
                                         <span>${item.inCart}</span>
                                         <ion-icon name="caret-forward-outline"></ion-icon>
                                 </div>
 
-                                <div class="totalCart col">
+                                <div class="totalCart">
                                         ${item.inCart * item.price}
-                                </div>
                                 </div>
                         `
                 });
