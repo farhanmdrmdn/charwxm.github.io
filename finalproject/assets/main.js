@@ -136,7 +136,6 @@ function setItems(product) {
 }
 
 function totalCost(product) {
-        // console.log("The price is ", product.price);
         let cartCost = localStorage.getItem('totalCost');
         
         console.log("My cartCost is", cartCost);
@@ -156,21 +155,23 @@ function displayCart() {
         let cartItems = localStorage.getItem("productInCart");
         cartItems = JSON.parse(cartItems);
         let productContainer = document.querySelector
-                (".products");
+                (".productsIncart");
+        let cartCost = localStorage.getItem('totalCost');
         
         console.log(cartItems);
         if( cartItems && productContainer ) {
                 productContainer.innerHTML = '';
                 Object.values(cartItems).map(item => {
                         productContainer.innerHTML += `
-                                <div class = "products">
+                        <div class = "cartClass">
+                                <div class = "productsCart">
                                         <ion-icon name="close-circle-outline"></ion-icon>
                                         <img src="assets/img/product/${item.tag}.jpeg" class="p3">
                                         <span>${item.name}</span>                      
                                 </div>
                                 
                                 <div class = "priceCart">
-                                        ${item.price}
+                                        $${item.price}
                                 </div>
 
                                 <div class = "quantityCart">
@@ -180,10 +181,23 @@ function displayCart() {
                                 </div>
 
                                 <div class="totalCart">
-                                        ${item.inCart * item.price}
+                                        $${item.inCart * item.price}
                                 </div>
+                        </div>
+
                         `
                 });
+                        productContainer.innerHTML += `
+                                <div class="basketTotalContainer">
+                                        <h4 class="basketTotalTitle">
+                                                Basket Total:
+                                        </h4>
+                                        
+                                <h4 class ="basketTotal">
+                                        $${cartCost}
+                                </h4>
+                        
+                        `;
         }
 }
 
