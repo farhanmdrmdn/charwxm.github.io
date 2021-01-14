@@ -3,6 +3,9 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
+
+/* ------index Page------- */
+
 body {
     padding-top: 56px;
 }
@@ -28,44 +31,15 @@ body {
     padding-top: 250px;
 }
 
+.calltoaction {
+  padding-top: 40px;
+}
+
 /* ------Cart Page------- */
 
-.container {
+.cartheader {
     padding-top: 30px;
 }
-
-.m-0{
-  padding: 20px 0;
-}
-
-.footer{
-  background-color:silver;
-}
-
-#test{
-  height:180px;
-  padding-top: 20px;
-}
-
-.footer_one{
-  width:50%;
-  float:left;
-  padding-left:50px;
-}
-
-.footer_two{
-  width:50%;
-  float:right;
-  padding-left: 100px;
-}
-
-.footer_two ul{
-  padding-left:20px;
-}
-
-
-
-/* ------Cart Page------- */
 
 .products-container {
     max width: 650px;
@@ -175,12 +149,27 @@ body {
 
 /*-------Footer--------*/
 
-.socialMedias {
-  text-align:center;
+.footer{
+  background-color:#f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: x-small;
 }
 
-#image1{
-  padding:20px;
+.footer_one{
+  padding-left: 50px;
+}
+
+.footer-3 {
+  padding-right: 50px;
+}
+
+.footerlink {
+  padding-bottom:10px;
 }
 
 .padding-top {
@@ -189,17 +178,5 @@ body {
 
 #signinpaddingtop {
   padding-top: 60px;
-}
-
-.socialMedias{
-  text-align:center;
-}
-
-#image1 {
-  padding: 20px;
-}
-
-#image1:hover {
-  background:blue;
 }
 

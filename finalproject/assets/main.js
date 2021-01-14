@@ -196,6 +196,7 @@ function displayCart() {
                                 <h4 class ="basketTotal">
                                         $${cartCost}
                                 </h4>
+                                </div>
                         
                         `;
         }
