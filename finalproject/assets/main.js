@@ -93,22 +93,26 @@ function onLoadCartNumbers() {
         }
 }
 
-function cartNumbers(product) {
+function cartNumbers(product, action) {
 
         let productNumbers = localStorage.getItem
         ('cartNumbers');
-
         productNumbers = parseInt(productNumbers);
 
-        if( productNumbers ) {
-                localStorage.setItem('cartNumbers', productNumbers 
-                + 1);
+        let cartItems = localStorage.getItem('productInCart');
+        cartItems = JSON.parse(cartItems);
+
+        if( action ) {
+                localStorage.setItem('cartNumbers', productNumbers - 1);
                 document.querySelector('.cart span').textContent = 
-                productNumbers + 1;
-        } else {
-                localStorage.setItem('cartNumbers', 1)
-                document.querySelector('.cart span').textContent = 
-                1;
+                productNumbers - 1;
+
+        } else if (productNumbers) {
+                localStorage.setItem('cartNumbers', productNumbers +1)
+                document.querySelector('.cart span').textContent = productNumbers + 1;
+        } else { 
+                localStorage.setItem("cartNumbers", 1);
+                document.querySelector('.cart span').textContent = 1;
         }
         setItems(product);
 }
@@ -118,45 +122,58 @@ function setItems(product) {
         cartItems = JSON.parse(cartItems);
 
         if (cartItems != null) {
+                let currentProduct = product.tag;
 
-                if(cartItems[product.tag] == undefined) {
+                if(cartItems[currentProduct] == undefined) {
                         cartItems = {
                                 ...cartItems,
-                                [product.tag]: product
+                                [currentProduct]: product
                         }
                 }
                 cartItems[product.tag].inCart += 1;
+
         } else {
                 product.inCart = 1;
                 cartItems = {
                         [product.tag]: product
-                }
+                };
         }
+
         localStorage.setItem("productInCart", JSON.stringify(cartItems));
 }
 
-function totalCost(product) {
+function totalCost(product,action) {
         let cartCost = localStorage.getItem('totalCost');
         
         console.log("My cartCost is", cartCost);
         console.log(typeof cartCost );
 
-        if(cartCost != null) {
+        if(action) {
                 cartCost = parseInt(cartCost)
-                localStorage.setItem('totalCost', cartCost + product.price);
+
+                localStorage.setItem("totalCost", cartCost - product.price);
+        } else if(cartCost != null) {
+
+                cartCost = parseInt(cartCost);
+                localStorage.setItem("totalCost", cartCost + product.price);
+
         } else {
                 localStorage.setItem("totalCost", product.price);
         }
 }
 
-// Shopping cart display
+// Shopping cart 
 
 function displayCart() {
         let cartItems = localStorage.getItem("productInCart");
         cartItems = JSON.parse(cartItems);
+
+        let cartCost = localStorage.getItem('totalCost');
+        // cartCost = parseInt(cart);
+
         let productContainer = document.querySelector
                 (".productsIncart");
-        let cartCost = localStorage.getItem('totalCost');
+        
         
         console.log(cartItems);
         if( cartItems && productContainer ) {
@@ -175,9 +192,9 @@ function displayCart() {
                                 </div>
 
                                 <div class = "quantityCart">
-                                        <ion-icon name="caret-back-outline"></ion-icon>
+                                        <ion-icon class="decrease" name="caret-back-outline"></ion-icon>
                                         <span>${item.inCart}</span>
-                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                        <ion-icon class="increase " name="caret-forward-outline"></ion-icon>
                                 </div>
 
                                 <div class="totalCart">
@@ -193,13 +210,85 @@ function displayCart() {
                                                 Basket Total:
                                         </h4>
                                         
-                                <h4 class ="basketTotal">
-                                        $${cartCost}
-                                </h4>
+                                        <h4 class ="basketTotal">
+                                                $${cartCost}
+                                        </h4>
+                                </div>
+                        `
                         
-                        `;
+deleteButton();
+manageQuantity();
         }
 }
+
+// Button function on Shopping cart
+
+function manageQuantity() {
+        let decreaseButtons = document.querySelectorAll('.decrease');
+        let increaseButtons = document.querySelectorAll('.increase');
+        let currentQuantity = 0;
+        let currentProduct = '';
+        let cartItems = localStorage.getItem('productsInCart');
+        cartItems = JSON.parse(cartItems);
+    
+        for(let i=0; i < increaseButtons.length; i++) {
+            decreaseButtons[i].addEventListener('click', () => {
+                console.log(cartItems);
+                currentQuantity = decreaseButtons[i].parentElement.querySelector('span').textContent;
+                console.log(currentQuantity);
+                currentProduct = decreaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
+                console.log(currentProduct);
+    
+                if( cartItems[currentProduct].inCart > 1 ) {
+                    cartItems[currentProduct].inCart -= 1;
+                    cartNumbers(cartItems[currentProduct], "decrease");
+                    totalCost(cartItems[currentProduct], "decrease");
+                    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+                    displayCart();
+                }
+            });
+    
+            increaseButtons[i].addEventListener('click', () => {
+                console.log(cartItems);
+                currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
+                console.log(currentQuantity);
+                currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
+                console.log(currentProduct);
+    
+                cartItems[currentProduct].inCart += 1;
+                cartNumbers(cartItems[currentProduct]);
+                totalCost(cartItems[currentProduct]);
+                localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+                displayCart();
+            });
+        }
+    }
+
+    function deleteButtons() {
+        let deleteButtons = document.querySelectorAll('.product ion-icon');
+        let productNumbers = localStorage.getItem('cartNumbers');
+        let cartCost = localStorage.getItem("totalCost");
+        let cartItems = localStorage.getItem('productsInCart');
+        cartItems = JSON.parse(cartItems);
+        let productName;
+        console.log(cartItems);
+    
+        for(let i=0; i < deleteButtons.length; i++) {
+            deleteButtons[i].addEventListener('click', () => {
+                productName = deleteButtons[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
+               
+                localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
+                localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+    
+                delete cartItems[productName];
+                localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+    
+                displayCart();
+                onLoadCartNumbers();
+            })
+        }
+    }
+    
 
 onLoadCartNumbers();
 displayCart();

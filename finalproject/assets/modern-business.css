@@ -102,6 +102,11 @@ body {
   width: 100%;
 }
 
+.cartClass ion-icon {
+  cursor: pointer;
+  font-size: 12px;
+}
+
 .productsCart {
   width: 50%;
   display: flex;
