@@ -41,7 +41,7 @@
             <a class="nav-link" href="sign_in.html">Sign in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="register.html">Register</a>
           </li>
           <li class="cart">
             <a class="nav-link" href="shopping_cart.html">
@@ -65,50 +65,12 @@
   </nav>
 
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide padding-top" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="
-              background-image: url('https://images.pexels.com/photos/276534/pexels-photo-276534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-            ">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Lounge Chair</h3>
-            <p>Weather-resistant, 100% egyptian cotton</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="
-              background-image: url('https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-            ">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Bed Frame</h3>
-            <p>High-quality teak wood</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="
-              background-image: url('https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-            ">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Leather Sofa</h3>
-            <p>100% cowhide leather</p>
-          </div>
+    <div class="jumbotron jumbotron_cart jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Home</h1>
+          <p class="lead">will love its present</p>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
   </header>
 
   <!-- Page Content -->
@@ -148,39 +110,63 @@
       <div class="row">
         <div class="col-8 footer_one">
           <div class="row">
-            <div class="col">
-              <h6 style="padding-left: 40px">Useful information</h6>
-              <ul style="list-style-type:none">
-                <li class="footerlink"><a>Customer Care 24/7</a></li>
-                <li class="footerlink"><a>Delivery</a></li>
-                <li class="footerlink"><a>Exchanges & Returns</a></li>
-                <li class="footerlink"><a>Payment</a></li>
-                <li class="footerlink"><a>FAQs</a></li>
-              </ul>
-            </div>
-            <div class="col" style="padding-top:30px">
-              <ul style="list-style-type:none">
-                <li class="footerlink"><a>About Us</a></li>
-                <li class="footerlink"><a>Affliates</a></li>
-                <li class="footerlink"><a>Advertising</a></li>
-                <li class="footerlink"><a>Terms & Conditions</a></li>
-                <li class="footerlink"><a>Privacy Policy</a></li>
-              </ul>
-            </div>
+              <h6 style="padding-left: 55px">Useful information</h6>
+          </div>
+          <div class="row">
+              <div class="col">
+                <ul style="list-style-type:none">
+                  <li class="footerlink">
+                    <a class="footerlink" href="contact.html">Customer Care 24/7</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Delivery</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Exchanges & Returns</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Payment</a>
+                  </li>
+                  <li class="footerlink"> 
+                    <a class="footerlink">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul style="list-style-type:none">
+                  <li class="footerlink">
+                    <a class="footerlink" href="about.html">About Us</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Affliates</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Advertising</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Terms & Conditions</a>
+                  </li>
+                  <li class="footerlink">
+                    <a class="footerlink">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
           </div>
         </div>
-        <div class="col-4 footer-3">
-          <h6>Stay in touch</h6>
-          <div class="input-group input-group-sm mb-5">
-            <input type="email" class="form-control" placeholder="Sign up for CDF news" aria-label="Subscriber emailadd" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">></button>
-            </div>
-          </div>
+        <div class="col-4 footer-2">
           <h6>Contact Us</h6>
           <img src="assets/img/twitterlogo.png" width="auto" height="22px" alt="twitter">
           <img src="assets/img/facebooklogo.png" width="auto" height="22px" alt="facebook">
-          <img src="assets/img/iglogo.png" width="auto" height="30px" alt="instagram">
+          <img src="assets/img/iglogo.png" width="auto" height="28px" alt="instagram">
+          <div class="footer-3">
+            <h6>Stay in touch</h6>
+            <div class="input-group input-group-sm mb-5">
+              <input type="email" class="form-control" placeholder="Sign up for CDF news" aria-label="Subscriber emailadd" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">></button>
+            </div>
+            </div>
+          </div>
         </div>    
       </div>
     </div>

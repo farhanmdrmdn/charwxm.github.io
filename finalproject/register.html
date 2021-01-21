@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Sign in</title>
+    <title>Register</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -78,16 +78,15 @@
 
     <!-- Page Content -->
     <div class="container">
-      <!-- Contact Form -->
-      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+      <!-- Registration Form -->
       <div class="row" id="signinpaddingtop">
         <div class="col-sm-6">
-            <img class="img-fluid" src="assets/img/signin_banner.jpg" height="400" style="padding-bottom: 10px;">
+            <img class="img-fluid" src="assets/img/registerbanner.jpg" height="400" style="padding-bottom: 10px;">
         </div>
         <div class="col-sm-6">
-          <h3>Sign in</h3>
+          <h3>Register</h3>
           <hr>
-          <form name="signin_form" id="signin_form" novalidate>
+          <form name="register_form" id="register_form" novalidate>
             <div class="control-group form-group">
                 <div class="controls">
                   <label>Email:</label>
@@ -112,21 +111,33 @@
                 />
               </div>
             </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Confirm Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirm_password"
+                  required
+                  data-validation-required-message="Please enter your password."
+                />
+              </div>
+            </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button
+            <!-- TODO  this `href` needs to be replaced after I learn spring boot -->
+            <a href="">go to </a>
+            <button 
               type="submit"
               class="btn btn-primary"
               id="sendMessageButton" style="background-color: black; border: 0;"
             >
-              Log in
+              Register
             </button>
           </form>
         </div>
       </div>
-      <!-- /.row -->
     </div>
-    <!-- /.container -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -195,7 +206,7 @@
         </div>
       </div>
     </footer>
-    
+
     <!-- Bootstrap core JavaScript -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
