@@ -1,7 +1,5 @@
 function addProductPage(){
 
-        alert("hello 4")
-
         // TODO fetch requires http or https which is only provided by spring boot.
 
         fetch('file:///Users/charwan/Desktop/charwxm.github.io/finalproject/assets/products.json')
