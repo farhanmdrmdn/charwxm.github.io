@@ -22,7 +22,7 @@ let products = [
         {
                 name: "Clare Dinner Plates Set",
                 tag: "clare_dinnerplateset1",
-                price: 54.8,
+                price: 55,
                 inCart: 0
         },
         {
