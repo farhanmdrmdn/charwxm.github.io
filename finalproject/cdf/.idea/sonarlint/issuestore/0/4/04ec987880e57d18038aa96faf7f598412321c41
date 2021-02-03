@@ -1,0 +1,4 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùæñÃûÿÿÿÿ
+Ñ
+java:S1598"µThis file "UserService.java" should be located in "Models" directory, not in "/Users/chase/Desktop/Software Dev/charwxm.github.io/finalproject/cdf/src/main/java/com/cdf/cdf/models".(ùæñÃûÿÿÿÿ

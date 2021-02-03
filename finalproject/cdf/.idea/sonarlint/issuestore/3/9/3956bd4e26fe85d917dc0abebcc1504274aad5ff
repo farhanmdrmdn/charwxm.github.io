@@ -1,0 +1,5 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÏØ‹
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùæñÃûÿÿÿÿ
+Õ
+java:S1598"¹This file "UserServiceImpl.java" should be located in "Models" directory, not in "/Users/chase/Desktop/Software Dev/charwxm.github.io/finalproject/cdf/src/main/java/com/cdf/cdf/models".(ùæñÃûÿÿÿÿ
