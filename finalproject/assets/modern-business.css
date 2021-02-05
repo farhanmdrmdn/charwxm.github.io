@@ -1,0 +1,200 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+/* ------index Page------- */
+
+body {
+    padding-top: 56px;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+} 
+
+.jumbotron_shopall {
+    background-image: url("img/shop_all_banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+}
+
+.calltoaction {
+  padding-top: 40px;
+}
+
+/* ------Cart Page------- */
+
+.cartheader {
+    padding-top: 30px;
+}
+
+.jumbotron_cart {
+  background-image: url("img/shoppingcartbanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+.products-container {
+    max width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.product {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.productsIncart {
+  display: flexbox;
+  width: 100%;
+}
+
+.cartClass ion-icon {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.productsCart {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cartClass {
+  display: flex;
+}
+
+.product-title {
+    width: 50%
+    
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.priceCart {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.quantityCart {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+    width: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.totalCart {
+    width: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.p3 {
+  width: 30%
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 20px;
+}
+
+
+.checkOut {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    
+}
+
+/*-------Footer--------*/
+
+.footer{
+  background-color:#f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: x-small;
+}
+
+.footer_one{
+  padding-left: 50px;
+}
+
+.footer-2 {
+  padding-right: 50px;
+}
+
+.footer-3 {
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+.footerlink {
+  padding-top:10px;
+  color:black;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+#signinpaddingtop {
+  padding-top: 60px;
+}
+
