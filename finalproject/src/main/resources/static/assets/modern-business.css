@@ -144,19 +144,33 @@ body {
   width: 30%
 }
 
+.basketTotal {
+  padding-left: 50px;
+}
+
 .basketTotalContainer {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 60px;
 }
-
 
 .checkOut {
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
+    padding-bottom: 20px;
     
+}
+
+.emptyBasket {
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.basketEmptyTitle {
+  padding-bottom: 30px;
 }
 
 /* ------Checkout Success------- */

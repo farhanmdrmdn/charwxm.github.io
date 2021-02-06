@@ -52,34 +52,34 @@ let products = [
         },
         {
                 name: "Isabella Floor Lamp",
-                tag: "isabella_floorlamp",
-                pic: "asher_tallshelf1",
-                price: 179,
-                inCart: 0
-        },
-        {
-                name: "Linate Cofee Table",
-                tag: "linate_coffeetable",
-                pic: "asher_tallshelf1",
-                price: 1279,
-                inCart: 0
-        },
-        {
-                name: "Reagan Book Shelf",
-                tag: "reagan_bookshelf",
-                pic: "asher_tallshelf1",
-                price: 899,
-                inCart: 0
-        },
-        {
-                name: "Isabella Floor Lamp",
                 tag: "isabellafloorlamp",
                 pic: "isabella_floorlamp1",
                 price: 179,
                 inCart: 0
         },
         {
-                name: "Linate Cofee Table",
+                name: "Linate Coffee Table",
+                tag: "linatecoffeetable",
+                pic: "asher_tallshelf1",
+                price: 1279,
+                inCart: 0
+        },
+        {
+                name: "Reagan Book Shelf",
+                tag: "reaganbookshelf",
+                pic: "reagan_bookshelf1",
+                price: 899,
+                inCart: 0
+        },
+        {
+                name: "Isabella Floor Lamp",
+                tag: "isabellafloorlamp1",
+                pic: "isabella_floorlamp1",
+                price: 179,
+                inCart: 0
+        },
+        {
+                name: "Linate Coffee Table",
                 tag: "linatecoffeetable",
                 pic: "linate_coffeetable1",
                 price: 1279,
@@ -155,8 +155,8 @@ function setItems(product) {
 function totalCost(product,action) {
         let cartCost = localStorage.getItem('totalCost');
         
-        console.log("My cartCost is", cartCost);
-        console.log(typeof cartCost );
+        // console.log("My cartCost is", cartCost);
+        // console.log(typeof cartCost );
 
         if(action) {
                 cartCost = parseInt(cartCost)
@@ -185,8 +185,6 @@ function displayCart() {
         let productContainer = document.querySelector
                 (".productsIncart");
         
-        
-
 
     if( cartItems && productContainer ) {
                 productContainer.innerHTML = '';
@@ -219,13 +217,19 @@ function displayCart() {
                         productContainer.innerHTML += `
                                 <div class="basketTotalContainer">
                                         <h4 class="basketTotalTitle">
-                                                Basket Total:
+                                                 Total : 
                                         </h4>
                                         
                                         <h4 class ="basketTotal">
-                                                $${cartCost}
+                                                 $${cartCost}
                                         </h4>
                                 </div>
+
+                        <div class="checkOut">
+                                <div class="checkOut btn">
+                                  <a class="btn btn-md btn-secondary btn-block" href="checkout_success.html" style="background-color: rgb(92, 86, 86); border-radius: 0;" >Check Out</a>
+                                </div>
+                              </div>
                         `
                         
         removeCart();
@@ -244,11 +248,11 @@ function manageQuantity() {
     
         for(let i=0; i < increaseButtons.length; i++) {
             decreaseButtons[i].addEventListener('click', () => {
-                console.log(cartItems);
+                // console.log(cartItems);
                 currentQuantity = decreaseButtons[i].parentElement.querySelector('span').textContent;
-                console.log(currentQuantity);
+                // console.log(currentQuantity);
                 currentProduct = decreaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-                console.log(currentProduct);
+                // console.log(currentProduct);
     
                 if( cartItems[currentProduct].inCart > 1 ) {
                     cartItems[currentProduct].inCart -= 1;
@@ -260,9 +264,9 @@ function manageQuantity() {
             });
     
             increaseButtons[i].addEventListener('click', () => {
-                console.log(cartItems);
+                // console.log(cartItems);
                 currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
-                console.log(currentQuantity);
+                // console.log(currentQuantity);
                 currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
                 console.log(currentProduct);
     
@@ -282,7 +286,7 @@ function manageQuantity() {
     let cartItems = localStorage.getItem('productInCart');
     cartItems = JSON.parse(cartItems);
     let productName;
-    console.log(cartItems);
+//     console.log(cartItems);
 
         // alert("hello");
 
