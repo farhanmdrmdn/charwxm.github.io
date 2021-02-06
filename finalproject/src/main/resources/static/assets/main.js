@@ -3,77 +3,89 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
         {
                 name: "Asher Tall Shelf",
-                tag: "asher_tallshelf1",
+                tag: "ashertallshelf",
+                pic: "asher_tallshelf1",
                 price: 150,
                 inCart: 0
         },
         {
                 name: "Axel Side Chair",
-                tag: "axel_side_chair1",
+                tag: "axelsidechair",
+                pic: "axel_side_chair1",
                 price: 100,
                 inCart: 0
         },
         {
                 name: "Bruno Dining Table",
-                tag: "bruno_diningtable1",
+                tag: "brunodiningtable",
+                pic: "bruno_diningtable1",
                 price: 1040,
                 inCart: 0
         },
         {
                 name: "Clare Dinner Plates Set",
-                tag: "clare_dinnerplateset1",
+                tag: "claredinnerplateset",
+                pic: "clare_dinnerplateset1",
                 price: 55,
                 inCart: 0
         },
         {
                 name: "Dual Tone 3 Seater Sofa",
-                tag: "dualtone_3seatersofa1",
+                tag: "dualtone3seatersofa",
+                pic: "dualtone_3seatersofa1",
                 price: 399,
                 inCart: 0
         },
         {
                 name: "Emelie Tv Console",
-                tag: "emelie_tvconsole1",
+                tag: "emelietvconsole",
+                pic: "emelie_tvconsole1",
                 price: 399,
                 inCart: 0
         },
         {
                 name: "Grasshoppa Floor Lamp",
-                tag: "grasshoppa_floorlamp1",
+                tag: "grasshoppafloorlamp",
+                pic: "grasshoppa_floorlamp1",
                 price: 149,
                 inCart: 0
         },
         {
                 name: "Isabella Floor Lamp",
-                tag: "isabella_floorlamp1",
+                tag: "isabella_floorlamp",
+                pic: "asher_tallshelf1",
                 price: 179,
                 inCart: 0
         },
         {
                 name: "Linate Cofee Table",
-                tag: "linate_coffeetable1",
+                tag: "linate_coffeetable",
+                pic: "asher_tallshelf1",
                 price: 1279,
                 inCart: 0
         },
         {
                 name: "Reagan Book Shelf",
-                tag: "reagan_bookshelf1",
+                tag: "reagan_bookshelf",
+                pic: "asher_tallshelf1",
                 price: 899,
                 inCart: 0
         },
         {
                 name: "Isabella Floor Lamp",
-                tag: "isabella_floorlamp1",
+                tag: "isabellafloorlamp",
+                pic: "isabella_floorlamp1",
                 price: 179,
                 inCart: 0
         },
         {
                 name: "Linate Cofee Table",
-                tag: "linate_coffeetable1",
+                tag: "linatecoffeetable",
+                pic: "linate_coffeetable1",
                 price: 1279,
                 inCart: 0
-        },
-]
+        }
+];
 
 // "Add to cart" Function column
 
@@ -81,12 +93,11 @@ for (let i = 0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
                 cartNumbers(products[i]);
                 totalCost(products[i]);
-        })
+        });
 }
 
 function onLoadCartNumbers() {
-        let productNumbers = localStorage.getItem
-        ('cartNumbers');
+        let productNumbers = localStorage.getItem('cartNumbers');
 
         if (productNumbers) {
                 document.querySelector('.cart span').textContent = productNumbers;
@@ -95,8 +106,7 @@ function onLoadCartNumbers() {
 
 function cartNumbers(product, action) {
 
-        let productNumbers = localStorage.getItem
-        ('cartNumbers');
+        let productNumbers = localStorage.getItem('cartNumbers');
         productNumbers = parseInt(productNumbers);
 
         let cartItems = localStorage.getItem('productInCart');
@@ -166,11 +176,11 @@ function totalCost(product,action) {
 
 function displayCart() {
         let cartItems = localStorage.getItem("productInCart");
-        cartconsole.log(cartItems);
-        Items = JSON.parse(cartItems);
+        // console.log(cartItems);
+        cartItems = JSON.parse(cartItems);
 
         let cartCost = localStorage.getItem('totalCost');
-        // cartCost = parseInt(cart);
+        cartCost = parseInt(cartCost);
 
         let productContainer = document.querySelector
                 (".productsIncart");
@@ -185,7 +195,7 @@ function displayCart() {
                         <div class = "cartClass">
                                 <div class = "productsCart">
                                         <ion-icon name="close-circle-outline"></ion-icon>
-                                        <img src="assets/img/product/${item.tag}.jpeg" class="p3">
+                                        <img src="assets/img/product/${item.pic}.jpeg" class="p3">
                                         <span>${item.name}</span>                      
                                 </div>
                                 
@@ -218,45 +228,18 @@ function displayCart() {
                                 </div>
                         `
                         
-deleteButton();
-manageQuantity();
+        removeCart();
+        manageQuantity();
         }
 }
 
 // Button function on Shopping cart
-
-function deleteButton() {
-    let deleteButtons = document.querySelectorAll('.product ion-icon');
-    let productNumbers = localStorage.getItem('cartNumbers');
-    let cartCost = localStorage.getItem('totalCost');
-    // let productsInCart = localStorage.getItem("productsInCart")
-    let cartItems = localStorage.getItem('productsInCart');
-    cartItems = JSON.parse(cartItems);
-    let productName;
-    console.log(cartItems);
-
-    for(let i=0; i < deleteButtons.length; i++) {
-        deleteButtons[i].addEventListener('click', () => {
-            productName = deleteButtons[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-
-            localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
-            localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
-
-            delete cartItems[productName];
-            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
-
-            displayCart();
-            onLoadCartNumbers();
-        })
-    }
-}
-
 function manageQuantity() {
         let decreaseButtons = document.querySelectorAll('.decrease');
         let increaseButtons = document.querySelectorAll('.increase');
         let currentQuantity = 0;
         let currentProduct = '';
-        let cartItems = localStorage.getItem('productsInCart');
+        let cartItems = localStorage.getItem('productInCart');
         cartItems = JSON.parse(cartItems);
     
         for(let i=0; i < increaseButtons.length; i++) {
@@ -271,7 +254,7 @@ function manageQuantity() {
                     cartItems[currentProduct].inCart -= 1;
                     cartNumbers(cartItems[currentProduct], "decrease");
                     totalCost(cartItems[currentProduct], "decrease");
-                    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+                    localStorage.setItem('productInCart', JSON.stringify(cartItems));
                     displayCart();
                 }
             });
@@ -286,48 +269,72 @@ function manageQuantity() {
                 cartItems[currentProduct].inCart += 1;
                 cartNumbers(cartItems[currentProduct]);
                 totalCost(cartItems[currentProduct]);
-                localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+                localStorage.setItem('productInCart', JSON.stringify(cartItems));
                 displayCart();
             });
         }
     }
-    
+
+  function removeCart() {
+    let removeCart = document.querySelectorAll('.productsCart ion-icon');
+    let productNumbers = localStorage.getItem('cartNumbers');
+    let cartCost = localStorage.getItem("totalCost");
+    let cartItems = localStorage.getItem('productInCart');
+    cartItems = JSON.parse(cartItems);
+    let productName;
+    console.log(cartItems);
+
+        // alert("hello");
+
+    for(let i=0; i < removeCart.length; i++) {
+        removeCart[i].addEventListener('click', () => {
+            productName = removeCart[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
+           
+            localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
+            localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+
+            delete cartItems[productName];
+            localStorage.setItem('productInCart', JSON.stringify(cartItems));
+
+            displayCart();
+            onLoadCartNumbers();
+        })
+    }
+}
 
 onLoadCartNumbers();
 displayCart();
 
+
 // fetch data function
 
-function fetchUserData() {
-        fetch('product.json')
-        .then(response => response.json())
-        .then(users => {
-            let output = '<h2>List of Users</h2>';
-            output += '<ul>';
-                users.forEach(function(user) {
-                    output += `
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                      <a href="#"><img
-                          class="card-img-top"
-                          src="assets/img/product/linate_coffeetable1.jpeg"
-                          height="350"
-                          alt=""
-                      /></a>
-                      <div class="card-body">
-                        <h4 class="card-title">Linate Coffee Table</h4>
-                        <p class="card-text">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                        <a class="add-cart cart12" href="#">Add Cart</a>
-                      </div>
-                    </div>
-                  </div>
-                `;
-                });
-                output +='</ul>';
-                document.getElementById("response").innerHTML = output;
-        });
-    }
-
-
+// function fetchUserData() {
+//         fetch('product.json')
+//         .then(response => response.json())
+//         .then(users => {
+//             let output = '<h2>List of Users</h2>';
+//             output += '<ul>';
+//                 users.forEach(function(user) {
+//                     output += `
+//                   <div class="col-lg-4 col-sm-6 portfolio-item">
+//                     <div class="card h-100">
+//                       <a href="#"><img
+//                           class="card-img-top"
+//                           src="assets/img/product/linate_coffeetable1.jpeg"
+//                           height="350"
+//                           alt=""
+//                       /></a>
+//                       <div class="card-body">
+//                         <h4 class="card-title">Linate Coffee Table</h4>
+//                         <p class="card-text">
+//                           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+//                         </p>
+//                         <a class="add-cart cart12" href="#">Add Cart</a>
+//                       </div>
+//                     </div>
+//                   </div>
+//                 `;
+//                 });
+//                 output +='</ul>';
+//                 document.getElementById("response").innerHTML = output;
+//         });

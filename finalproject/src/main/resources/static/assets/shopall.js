@@ -1,10 +1,10 @@
-function addProductPage(){
+// function addProductPage(){
 
         // TODO fetch requires http or https which is only provided by spring boot.
 
-        fetch('file:///Users/charwan/Desktop/charwxm.github.io/finalproject/assets/products.json')
-        .then(response => response.json())
-        .then(data => alert(data));
+        // fetch('file:///Users/charwan/Desktop/charwxm.github.io/finalproject/assets/products.json')
+        // .then(response => response.json())
+        // .then(data => alert(data));
 
 //         fetch('assets/products.json')
 //         .then((response) => response.json())
@@ -43,9 +43,9 @@ function addProductPage(){
 
 
 
-}
 
-document.onload = addProductPage()
+
+// document.onload = addProductPage()
 
 
         // `<div class="col-sm-3"><div class="card p-1">
