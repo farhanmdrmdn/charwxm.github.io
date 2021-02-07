@@ -73,7 +73,7 @@ let products = [
         },
         {
                 name: "Isabella Floor Lamp",
-                tag: "isabellafloorlamp1",
+                tag: "isabellafloorlamp",
                 pic: "isabella_floorlamp1",
                 price: 179,
                 inCart: 0
@@ -227,7 +227,7 @@ function displayCart() {
 
                         <div class="checkOut">
                                 <div class="checkOut btn">
-                                  <a class="btn btn-md btn-secondary btn-block" href="checkout_success.html" style="background-color: rgb(92, 86, 86); border-radius: 0;" >Check Out</a>
+                                  <a class="btn btn-md btn-secondary btn-block" href="checkout_success.html">Check Out</a>
                                 </div>
                               </div>
                         `
@@ -268,7 +268,7 @@ function manageQuantity() {
                 currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
                 // console.log(currentQuantity);
                 currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-                console.log(currentProduct);
+                // console.log(currentProduct);
     
                 cartItems[currentProduct].inCart += 1;
                 cartNumbers(cartItems[currentProduct]);
@@ -312,11 +312,11 @@ displayCart();
 
 // fetch data function
 
-// function fetchUserData() {
+// function fetchProductData() {
 //         fetch('product.json')
 //         .then(response => response.json())
 //         .then(users => {
-//             let output = '<h2>List of Users</h2>';
+//             let output = '<h2>Shop All</h2>';
 //             output += '<ul>';
 //                 users.forEach(function(user) {
 //                     output += `
