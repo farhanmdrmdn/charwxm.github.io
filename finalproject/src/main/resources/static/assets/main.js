@@ -326,6 +326,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // email subscription
+// TODO
 <script  type="text/javascript">
   function storesignup(){
      var inputEmail= document.getElementById("emailsubscribe");
