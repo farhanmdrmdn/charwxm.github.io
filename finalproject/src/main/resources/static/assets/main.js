@@ -24,7 +24,7 @@ let products = [
         },
         {
                 name: "Reusable Canvas Lunch Bag",
-                tag: "canvaslunchbag",
+                tag: "reusablecanvaslunchbag",
                 pic: "canvas_lunchbag1",
                 price: 27,
                 inCart: 0
@@ -227,7 +227,7 @@ function displayCart() {
 
                         <div class="checkOut">
                                 <div class="checkOut btn">
-                                  <a class="btn btn-md btn-secondary btn-block" href="checkout_success.html" style="background-color: rgb(92, 86, 86); border-radius: 0;" >Check Out</a>
+                                  <a class="btn btn-md btn-secondary btn-block" href="checkout_success.html">Check Out</a>
                                 </div>
                               </div>
                         `
@@ -268,7 +268,7 @@ function manageQuantity() {
                 currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
                 // console.log(currentQuantity);
                 currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-                console.log(currentProduct);
+                // console.log(currentProduct);
     
                 cartItems[currentProduct].inCart += 1;
                 cartNumbers(cartItems[currentProduct]);
@@ -288,28 +288,31 @@ function manageQuantity() {
     let productName;
 //     console.log(cartItems);
 
-        // alert("hello");
-
     for(let i=0; i < removeCart.length; i++) {
         removeCart[i].addEventListener('click', () => {
             productName = removeCart[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-           
+        //     console.log(cartItems);
             localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
             localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
 
             delete cartItems[productName];
             localStorage.setItem('productInCart', JSON.stringify(cartItems));
 
+        
+
             displayCart();
             onLoadCartNumbers();
         })
+        
     }
+    
 }
 
 onLoadCartNumbers();
 displayCart();
 
-//faq collapsible
+
+function collapsible () {
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -324,23 +327,23 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+}
 
-// email subscription
-// TODO
-<script  type="text/javascript">
-  function storesignup(){
+// // email subscription
+// // TODO
+function storesignup(){
      var inputEmail= document.getElementById("emailsubscribe");
      localStorage.setItem("emailsubscribe", inputEmail.value);
     }
-</script>
+// </script>
 
 // fetch data function
 
 // function fetchProductData() {
-//         fetch('products.json')
+//         fetch('product.json')
 //         .then(response => response.json())
-//         .then(products => {
-//             let output = '<h2>List of Products</h2>';
+//         .then(users => {
+//             let output = '<h2>Shop All</h2>';
 //             output += '<ul>';
 //                 products.forEach(function(product) {
 //                     output += `
