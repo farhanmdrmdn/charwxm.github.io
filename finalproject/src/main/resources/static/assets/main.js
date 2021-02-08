@@ -23,10 +23,10 @@ let products = [
                 inCart: 0
         },
         {
-                name: "Clare Dinner Plates Set",
-                tag: "claredinnerplateset",
-                pic: "clare_dinnerplateset1",
-                price: 55,
+                name: "Reusable Canvas Lunch Bag",
+                tag: "canvas_lunchbag1",
+                pic: "canvas_lunchbag1",
+                price: 27
                 inCart: 0
         },
         {
@@ -51,16 +51,16 @@ let products = [
                 inCart: 0
         },
         {
-                name: "Isabella Floor Lamp",
-                tag: "isabellafloorlamp",
-                pic: "isabella_floorlamp1",
-                price: 179,
+                name: "Cotton Triangle Quilt",
+                tag: "cotton_triangle_quilt1",
+                pic: "cotton_triangle_quilt1",
+                price: 189,
                 inCart: 0
         },
         {
                 name: "Linate Coffee Table",
                 tag: "linatecoffeetable",
-                pic: "asher_tallshelf1",
+                pic: "linate_coffeetable1",
                 price: 1279,
                 inCart: 0
         },
@@ -72,17 +72,17 @@ let products = [
                 inCart: 0
         },
         {
+                name: "Clare Dinner Plates Set",
+                tag: "claredinnerplateset",
+                pic: "clare_dinnerplateset1",
+                price: 55,
+                inCart: 0
+        },
+       {
                 name: "Isabella Floor Lamp",
                 tag: "isabellafloorlamp1",
                 pic: "isabella_floorlamp1",
                 price: 179,
-                inCart: 0
-        },
-        {
-                name: "Linate Coffee Table",
-                tag: "linatecoffeetable",
-                pic: "linate_coffeetable1",
-                price: 1279,
                 inCart: 0
         }
 ];
@@ -327,33 +327,30 @@ for (i = 0; i < coll.length; i++) {
 
 // fetch data function
 
-// function fetchUserData() {
-//         fetch('product.json')
+// function fetchProductData() {
+//         fetch('products.json')
 //         .then(response => response.json())
-//         .then(users => {
-//             let output = '<h2>List of Users</h2>';
+//         .then(products => {
+//             let output = '<h2>List of Products</h2>';
 //             output += '<ul>';
-//                 users.forEach(function(user) {
+//                 products.forEach(function(product) {
 //                     output += `
-//                   <div class="col-lg-4 col-sm-6 portfolio-item">
-//                     <div class="card h-100">
-//                       <a href="#"><img
-//                           class="card-img-top"
-//                           src="assets/img/product/linate_coffeetable1.jpeg"
-//                           height="350"
-//                           alt=""
-//                       /></a>
-//                       <div class="card-body">
-//                         <h4 class="card-title">Linate Coffee Table</h4>
-//                         <p class="card-text">
-//                           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-//                         </p>
-//                         <a class="add-cart cart12" href="#">Add Cart</a>
-//                       </div>
-//                     </div>
-//                   </div>
+//                 <div class="col-lg-4 col-sm-6 portfolio-item">
+//                         <div class="card h-100 border-0">
+//                                 <img class="card-img-top" src="assets/img/product/cotton_triangle_quilt1.jpeg"
+//                                 onmouseover="this.src='assets/img/product/cotton_triangle_quilt2.jpeg'"
+//                                 onmouseout="this.src='assets/img/product/cotton_triangle_quilt1.jpeg'" height="350" alt="Cotton Triangle Quilt" />
+//                                 <div class="card-body">
+//                                         <h4 class="card-title">Cotton Triangle Quilt</h4>
+//                                         <p class="item-price">
+//                                                 $189
+//                                         </p>
+//                                         <a class="add-cart cart8" href="#">Add to Cart</a>
+//                                 </div>
+//                         </div>
+//                 </div>
 //                 `;
 //                 });
 //                 output +='</ul>';
-//                 document.getElementById("response").innerHTML = output;
+//                 document.getElementById("products_list").innerHTML = output;
 //         });

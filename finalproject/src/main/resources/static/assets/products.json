@@ -18,10 +18,10 @@
                 "price": 1040
         },
         {
-                "name": "Clare Dinner Plates Set",
-                "id": "claredinnerplateset",
-                "img": "assets/img/product/clare_dinnerplateset1/jpeg",
-                "price": 55
+                "name": "Reusable Canvas Lunch Bag",
+                "id": "canvas_lunchbag1",
+                "img": "canvas_lunchbag1",
+                "price": 27
         },
         {
                 "name": "Dual Tone 3 Seater Sofa",
@@ -42,11 +42,10 @@
                 "price": 149
         },
         {
-                "name": "Isabella Floor Lamp",
-                "id": "isabellafloorlamp",
-                "img": "assets/img/product/isabella_floorlamp1.jpeg",
-                "price": 179
-
+                "name": "Cotton Triangle Quilt",
+                "tag": "cotton_triangle_quilt1",
+                "img": "cotton_triangle_quilt1",
+                "price": 189,
         },
         {
                 "name": "Linate Coffee Table",
@@ -61,15 +60,16 @@
                 "price": 899
         },
         {
+                "name": "Clare Dinner Plates Set",
+                "id": "claredinnerplateset",
+                "img": "assets/img/product/clare_dinnerplateset1/jpeg",
+                "price": 55
+        }
+        {
                 "name": "Isabella Floor Lamp",
-                "id": "isabellafloorlamp1",
+                "id": "isabellafloorlamp",
                 "img": "assets/img/product/isabella_floorlamp1.jpeg",
                 "price": 179
-        },
-        {
-                "name": "Linate Coffee Table",
-                "id": "linatecoffeetable",
-                "img": "assets/img/product/linate_coffeetable1.jpeg",
-                "price": 1279
+
         }
 ]

@@ -173,6 +173,11 @@ body {
   padding-bottom: 30px;
 }
 
+.add-cart {
+  color:black;
+  font-style:italic;
+}
+
 /* ------Checkout Success------- */
 
 .checkout_success_body {
