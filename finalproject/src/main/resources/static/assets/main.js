@@ -26,7 +26,7 @@ let products = [
                 name: "Reusable Canvas Lunch Bag",
                 tag: "canvas_lunchbag1",
                 pic: "canvas_lunchbag1",
-                price: 27
+                price: 27,
                 inCart: 0
         },
         {
