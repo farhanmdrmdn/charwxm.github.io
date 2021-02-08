@@ -1,72 +1,75 @@
 [
   {
-    "filename": "asher_tallshelf1.jpg",
-    "title": "Asher Tall Shelf",
-    "type": "shelves",
-    "description": "Frame: Black powder coated metal. Shelves: Engineered Wood with smooth oak melamine laminate",
-    "price": 150
-  },
-  {
-    "filename": "axel_seide_chair1.jpg",
-    "title": "Axel Seide Chair",
-    "type": "chair",
-    "description": "fine craftsmanship of Axel’s Danish-inspired chair",
-    "price": 100
-  },
-  {
-    "filename": "bruno_diningtable1.jpg",
-    "title": "Bruno Dining Table",
-    "type": "table",
-    "description": "Its modern vintage elements are suitable for individuals who appreciate sophistication and elegance furniture.",
-    "price": 1040
-  },
-  {
-    "filename": "clare_dinnerplateset1.jpg",
-    "title": "Clare Dinner Plate Set",
-    "type": "utensil",
-    "description": "Crisp white oversized coupe shapes in durable porcelain go casual for everyday, or sophisticated for formal dinners.",
-    "price": 55
-  },
-  {
-    "filename": "dualtone_3seatersofa1.jpg",
-    "title": "Dualtone 3 Seater Sofa",
-    "type": "furniture",
-    "description": "Perched on wooden legs, this sofa infuses durability with the comfort with its medium firm cushioning and high-quality fabric. ",
-    "price": 399
-  },
-  {
-    "filename": "emelie_tvconsole1.jpg",
-    "title": "Emelie Tv Console",
-    "type": "furniture",
-    "description": "inspired by traditional Danish designs that aim to create the renown hygge (cosy) feeling in your home.",
-    "price": 399
-  },
-  {
-    "filename": "grasshoppa_floorlamp1.jpg",
-    "title": "Grasshoppa Floor Lamp",
-    "type": "Lamp",
-    "description": "Versatile in function, Grasshoppa serves as a great floor lamp by your sofa or bed for your night reads.",
-    "price": 149
-  },
-  {
-    "filename": "isabella_floorlamp1.jpg",
-    "title": "Isabella Floor Lamp",
-    "type": "lamp",
-    "description": "A timeless piece, the Isabella Floor Lamp is designed with a refined look in mind. With its slim metal lamp stand and neutral coloured lamp",
-    "price": 179
-  },
-  {
-    "filename": "linate_coffeetable1.jpg",
-    "title": "Linate Coffee Table",
-    "type": "table",
-    "description": "The furniture is also designed to look as though it lightly ‘floats’ above the ground, while showcasing the precision and strength of its design as a sturdy, stable piece of furniture.",
-    "price": 1279
-  },
-  {
-    "filename": "reagan_bookshelf1.jpg",
-    "title": "Reagan Book Shelf",
-    "type": "shelves",
-    "description": "the Reagan is crafted from solid Acacia wood and and is encased from top to bottom with sturdy brushed brass.",
-    "price": 899
-  }
+                "name": "Asher Tall Shelf",
+                "id": "ashertallshelf",
+                "img": "assets/img/product/asher_tallshelf1.jpeg",
+                "price": 150
+        },
+        {
+                "name": "Axel Side Chair",
+                "id": "axelsidechair",
+                "img": "assets/img/product/axel_side_chair1.jpeg",
+                "price": 100
+        },
+        {
+                "name": "Bruno Dining Table",
+                "id": "brunodiningtable",
+                "img": "assets/img/product/bruno_diningtable1.jpeg",
+                "price": 1040
+        },
+        {
+                "name": "Clare Dinner Plates Set",
+                "id": "claredinnerplateset",
+                "img": "assets/img/product/clare_dinnerplateset1/jpeg",
+                "price": 55
+        },
+        {
+                "name": "Dual Tone 3 Seater Sofa",
+                "id": "dualtone3seatersofa",
+                "img": "assets/img/product/dualtone_3seatersofa1.jpeg",
+                "price": 399
+        },
+        {
+                "name": "Emelie Tv Console",
+                "id": "emelietvconsole",
+                "img": "assets/img/product/emelie_tvconsole1.jpeg",
+                "price": 399
+        },
+        {
+                "name": "Grasshoppa Floor Lamp",
+                "id": "grasshoppafloorlamp",
+                "img": "assets/img/product/grasshoppa_floorlamp1.jpeg",
+                "price": 149
+        },
+        {
+                "name": "Isabella Floor Lamp",
+                "id": "isabellafloorlamp",
+                "img": "assets/img/product/isabella_floorlamp1.jpeg",
+                "price": 179
+
+        },
+        {
+                "name": "Linate Coffee Table",
+                "id": "linatecoffeetable",
+                "img": "assets/img/product/asher_tallshelf1.jpeg",
+                "price": 1279
+        },
+        {
+                "name": "Reagan Book Shelf",
+                "id": "reaganbookshelf",
+                "img": "assets/img/product/reagan_bookshelf1.jpeg",
+                "price": 899
+        },
+        {
+                "name": "Isabella Floor Lamp",
+                "id": "isabellafloorlamp1",
+                "img": "assets/img/product/isabella_floorlamp1.jpeg",
+                "price": 179
+        },
+        {
+                "name": "Linate Coffee Table",
+                "id": "linatecoffeetable",
+                "img": "assets/img/product/linate_coffeetable1.jpeg",
+                "price": 1279
+        }
 ]
