@@ -24,7 +24,7 @@ let products = [
         },
         {
                 name: "Reusable Canvas Lunch Bag",
-                tag: "canvaslunchbag",
+                tag: "reusablecanvaslunchbag",
                 pic: "canvas_lunchbag1",
                 price: 27,
                 inCart: 0
@@ -288,28 +288,31 @@ function manageQuantity() {
     let productName;
 //     console.log(cartItems);
 
-        // alert("hello");
-
     for(let i=0; i < removeCart.length; i++) {
         removeCart[i].addEventListener('click', () => {
             productName = removeCart[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-           
+        //     console.log(cartItems);
             localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
             localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
 
             delete cartItems[productName];
             localStorage.setItem('productInCart', JSON.stringify(cartItems));
 
+        
+
             displayCart();
             onLoadCartNumbers();
         })
+        
     }
+    
 }
 
 onLoadCartNumbers();
 displayCart();
 
-//faq collapsible
+
+function collapsible () {
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -324,15 +327,15 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+}
 
-// email subscription
-// TODO
-<script  type="text/javascript">
-  function storesignup(){
+// // email subscription
+// // TODO
+function storesignup(){
      var inputEmail= document.getElementById("emailsubscribe");
      localStorage.setItem("emailsubscribe", inputEmail.value);
     }
-</script>
+// </script>
 
 // fetch data function
 
