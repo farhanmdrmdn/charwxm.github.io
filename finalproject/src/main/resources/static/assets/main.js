@@ -325,6 +325,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+// email subscription
+<script  type="text/javascript">
+  function storesignup(){
+     var inputEmail= document.getElementById("emailsubscribe");
+     localStorage.setItem("emailsubscribe", inputEmail.value);
+    }
+</script>
+
 // fetch data function
 
 // function fetchProductData() {
