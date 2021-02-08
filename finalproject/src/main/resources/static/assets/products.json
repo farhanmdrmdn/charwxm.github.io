@@ -19,7 +19,7 @@
         },
         {
                 "name": "Reusable Canvas Lunch Bag",
-                "id": "canvas_lunchbag1",
+                "id": "canvaslunchbag",
                 "img": "canvas_lunchbag1",
                 "price": 27
         },
@@ -43,7 +43,7 @@
         },
         {
                 "name": "Cotton Triangle Quilt",
-                "tag": "cotton_triangle_quilt1",
+                "tag": "cottontrianglequilt",
                 "img": "cotton_triangle_quilt1",
                 "price": 189
         },

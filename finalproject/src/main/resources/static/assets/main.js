@@ -24,7 +24,7 @@ let products = [
         },
         {
                 name: "Reusable Canvas Lunch Bag",
-                tag: "canvas_lunchbag1",
+                tag: "canvaslunchbag",
                 pic: "canvas_lunchbag1",
                 price: 27,
                 inCart: 0
@@ -52,7 +52,7 @@ let products = [
         },
         {
                 name: "Cotton Triangle Quilt",
-                tag: "cotton_triangle_quilt1",
+                tag: "cottontrianglequilt",
                 pic: "cotton_triangle_quilt1",
                 price: 189,
                 inCart: 0
@@ -80,7 +80,7 @@ let products = [
         },
        {
                 name: "Isabella Floor Lamp",
-                tag: "isabellafloorlamp1",
+                tag: "isabellafloorlamp",
                 pic: "isabella_floorlamp1",
                 price: 179,
                 inCart: 0
