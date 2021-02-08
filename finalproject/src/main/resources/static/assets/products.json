@@ -1,113 +1,87 @@
 [
   {
-    "filename": "asher_tallshelf1.jpeg",
-    "title": "Asher Tall Shelf",
-    "type": "shelves",
-    "description": "Frame: Black powder coated metal. Shelves: Engineered Wood with smooth oak melamine laminate",
-    "price": 150,
-    "name": "Asher Tall Shelf",
-    "tag": "ashertallshelf",
-    "pic": "asher_tallshelf1",
-    "inCart": 0
-  },
-  {
-    "filename": "axel_seide_chair1.jpg",
-    "title": "Axel Seide Chair",
-    "type": "chair",
-    "description": "fine craftsmanship of Axel’s Danish-inspired chair",
-    "price": 100,
-    "name": "Axel Side Chair",
-    "tag": "axelsidechair",
-    "pic": "axel_side_chair1",
-    "inCart": 0
-  },
-  {
-    "filename": "bruno_diningtable1.jpg",
-    "title": "Bruno Dining Table",
-    "type": "table",
-    "description": "Its modern vintage elements are suitable for individuals who appreciate sophistication and elegance furniture.",
-    "name": "Bruno Dining Table",
-    "tag": "brunodiningtable",
-    "pic": "bruno_diningtable1",
-    "price": 1040,
-    "inCart": 0
-  },
-  {
-    "filename": "clare_dinnerplateset1.jpg",
-    "title": "Clare Dinner Plate Set",
-    "type": "utensil",
-    "description": "Crisp white oversized coupe shapes in durable porcelain go casual for everyday, or sophisticated for formal dinners.",
-    "name": "Clare Dinner Plates Set",
-    "tag": "claredinnerplateset",
-    "pic": "clare_dinnerplateset1",
-    "price": 55,
-    "inCart": 0
-  },
-  {
-    "filename": "dualtone_3seatersofa1.jpg",
-    "title": "Dualtone 3 Seater Sofa",
-    "type": "furniture",
-    "description": "Perched on wooden legs, this sofa infuses durability with the comfort with its medium firm cushioning and high-quality fabric. ",
-    "name": "Dual Tone 3 Seater Sofa",
-    "tag": "dualtone3seatersofa",
-    "pic": "dualtone_3seatersofa1",
-    "price": 399,
-    "inCart": 0
-  },
-  {
-    "filename": "emelie_tvconsole1.jpg",
-    "title": "Emelie Tv Console",
-    "type": "furniture",
-    "description": "inspired by traditional Danish designs that aim to create the renown hygge (cosy) feeling in your home.",
-    "name": "Emelie Tv Console",
-    "tag": "emelietvconsole",
-    "pic": "emelie_tvconsole1",
-    "price": 399,
-    "inCart": 0
-  },
-  {
-    "filename": "grasshoppa_floorlamp1.jpg",
-    "title": "Grasshoppa Floor Lamp",
-    "type": "Lamp",
-    "description": "Versatile in function, Grasshoppa serves as a great floor lamp by your sofa or bed for your night reads.",
-    "name": "Grasshoppa Floor Lamp",
-    "tag": "grasshoppafloorlamp",
-    "pic": "grasshoppa_floorlamp1",
-    "price": 149,
-    "inCart": 0
-  },
-  {
-    "filename": "isabella_floorlamp1.jpg",
-    "title": "Isabella Floor Lamp",
-    "type": "lamp",
-    "description": "A timeless piece, the Isabella Floor Lamp is designed with a refined look in mind. With its slim metal lamp stand and neutral coloured lamp",
-    "name": "Isabella Floor Lamp",
-    "tag": "isabellafloorlamp",
-    "pic": "isabella_floorlamp1",
-    "price": 179,
-    "inCart": 0
-  },
-  {
-    "filename": "linate_coffeetable1.jpg",
-    "title": "Linate Coffee Table",
-    "type": "table",
-    "description": "The furniture is also designed to look as though it lightly ‘floats’ above the ground, while showcasing the precision and strength of its design as a sturdy, stable piece of furniture.",
-    "name": "Linate Coffee Table",
-    "tag": "linatecoffeetable",
-    "pic": "asher_tallshelf1",
-    "price": 1279,
-    "inCart": 0
-  },
-  {
-    "filename": "reagan_bookshelf1.jpg",
-    "title": "Reagan Book Shelf",
-    "type": "shelves",
-    "description": "the Reagan is crafted from solid Acacia wood and and is encased from top to bottom with sturdy brushed brass.",
-    "name": "Reagan Book Shelf",
-    "tag": "reaganbookshelf",
-    "pic": "reagan_bookshelf1",
-    "price": 899,
-    "inCart": 0
+                "name": "Asher Tall Shelf",
+                "id": "ashertallshelf",
+                "img": "assets/img/product/asher_tallshelf1.jpeg",
+                "price": 150,
+                "inCart": 0
+        },
+        {
+                "name": "Axel Side Chair",
+                "id": "axelsidechair",
+                "img": "assets/img/product/axel_side_chair1.jpeg",
+                "price": 100,
+                "inCart": 0
+        },
+        {
+                "name": "Bruno Dining Table",
+                "id": "brunodiningtable",
+                "img": "assets/img/product/bruno_diningtable1.jpeg",
+                "price": 1040,
+                "inCart": 0
+        },
+        {
+                "name": "Reusable Canvas Lunch Bag",
+                "id": "canvaslunchbag",
+                "img": "canvas_lunchbag1",
+                "price": 27,
+                "inCart": 0
+        },
+        {
+                "name": "Dual Tone 3 Seater Sofa",
+                "id": "dualtone3seatersofa",
+                "img": "assets/img/product/dualtone_3seatersofa1.jpeg",
+                "price": 399,
+                "inCart": 0
+        },
+        {
+                "name": "Emelie Tv Console",
+                "id": "emelietvconsole",
+                "img": "assets/img/product/emelie_tvconsole1.jpeg",
+                "price": 399,
+                "inCart": 0
+        },
+        {
+                "name": "Grasshoppa Floor Lamp",
+                "id": "grasshoppafloorlamp",
+                "img": "assets/img/product/grasshoppa_floorlamp1.jpeg",
+                "price": 149,
+                "inCart": 0
+        },
+        {
+                "name": "Cotton Triangle Quilt",
+                "tag": "cottontrianglequilt",
+                "img": "cotton_triangle_quilt1",
+                "price": 189,
+                "inCart": 0
+        },
+        {
+                "name": "Linate Coffee Table",
+                "id": "linatecoffeetable",
+                "img": "assets/img/product/asher_tallshelf1.jpeg",
+                "price": 1279,
+                "inCart": 0
+        },
+        {
+                "name": "Reagan Book Shelf",
+                "id": "reaganbookshelf",
+                "img": "assets/img/product/reagan_bookshelf1.jpeg",
+                "price": 899,
+                "inCart": 0
+        },
+        {
+                "name": "Clare Dinner Plates Set",
+                "id": "claredinnerplateset",
+                "img": "assets/img/product/clare_dinnerplateset1/jpeg",
+                "price": 55,
+                "inCart": 0
+        }
+        {
+                "name": "Isabella Floor Lamp",
+                "id": "isabellafloorlamp",
+                "img": "assets/img/product/isabella_floorlamp1.jpeg",
+                "price": 179,
+                "inCart": 0
 
-  }
+        }
 ]

@@ -30,18 +30,6 @@
         padding-bottom: 10px;
       }
 
-        .socialMedias{
-          text-align:center;
-        }
-
-        #image1{
-          padding:20px;
-        }
-
-        .footer{
-          background-color:silver;
-        }
-
     </style>
   </head>
 
@@ -67,7 +55,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
@@ -120,19 +108,19 @@
           />
         </div>
         <div class="col-lg-6">
-          <h2 class="animate__animated animate__pulse" style="text-shadow: 1px 1px 2px grey;">About CDF</h2>
+          <h2 class="animate__animated animate__pulse" style="text-shadow: 1px 1px 2px grey; padding-top: 30px;">About CDF</h2>
           <p>
-            Your favourite (if not, soon-to-be) lifestyle store. Founded by our
+            Your favourite <i>(if not, soon-to-be)</i> lifestyle store. Founded by our
             personal exasperation in sourcing for quality and beautiful pieces
             at reasonable prices in Singapore.
           </p>
           <p>
-            CDF is proud to call ourselves a homegrown brand. We believe that
-            high-quality products should come at an affordable price. Driven by
-            a high standard of service, we provide stellar customer care even
-            after your purchase.
+            A homegrown brand, we believe that high-quality products doesn't have to rob your wallets and bank account. 
+            At the heart of the brand, lies a passionate team. One who loves people, and understands your needs.
           </p>
-          <p>We do not have a showroom and we operate 100% online.</p>
+          <p>
+            We look forward to meeting you. :)
+          </p>
         </div>
       </div>
       <!-- /.row -->
@@ -172,10 +160,10 @@
             />
             <div class="card-body">
               <h4 class="card-title">Charmaine Wan</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Founder</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Co-Founder</h6>
               <p class="card-text">
                 Sociologist by training, marketeer by choice. Currently
-                embarking on a new journey in programming, and dreaming of the
+                embarking on a new journey in programming and dreaming of the
                 day I can travel again!
               </p>
             </div>
@@ -217,16 +205,16 @@
                       <a class="footerlink" href="contact.html">Customer Care 24/7</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Delivery</a>
+                      <a class="footerlink" href="delivery.html">Delivery</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Exchanges & Returns</a>
+                      <a class="footerlink" href="exchanges_returns.html">Exchanges & Returns</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Payment</a>
+                      <a class="footerlink" href="payment.html">Payment</a>
                     </li>
                     <li class="footerlink"> 
-                      <a class="footerlink">FAQs</a>
+                      <a class="footerlink" href="faq.html">FAQs</a>
                     </li>
                   </ul>
                 </div>
@@ -236,32 +224,33 @@
                       <a class="footerlink" href="about.html">About Us</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Affliates</a>
+                      <a class="footerlink" href="affiliates.html">Affliates</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Advertising</a>
+                      <a class="footerlink" href="advertising.html">Advertising</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Terms & Conditions</a>
+                      <a class="footerlink" href="terms_and_conditions.html">Terms & Conditions</a>
                     </li>
                     <li class="footerlink">
-                      <a class="footerlink">Privacy Policy</a>
+                      <a class="footerlink" href="privacy_policy.html">Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
             </div>
           </div>
           <div class="col-4 footer-2">
-            <h6>Contact Us</h6>
-            <img src="assets/img/twitterlogo.png" width="auto" height="22px" alt="twitter">
-            <img src="assets/img/facebooklogo.png" width="auto" height="22px" alt="facebook">
-            <img src="assets/img/iglogo.png" width="auto" height="28px" alt="instagram">
+            <a href="contact.html" style="color: black;"><h6>Contact Us</h6></a>
+            <a href="https://www.instagram.com/cdfhome_/" target="_blank"><img src="assets/img/iglogo.png" width="auto" height="28px" alt="instagram"></a>
+            <a href="https://twitter.com/programmersmeme?lang=en" target="_blank"><img src="assets/img/twitterlogo.png" width="auto" height="24px" alt="twitter"></a>
+            <a href="https://www.facebook.com/ProgrammersCreateLife/" target="_blank"><img src="assets/img/facebooklogo.png" width="auto" height="22px" alt="facebook"></a>
             <div class="footer-3">
               <h6>Stay in touch</h6>
               <div class="input-group input-group-sm mb-5">
-                <input type="email" class="form-control" placeholder="Sign up for all things good" aria-label="Subscriber emailadd" aria-describedby="button-addon2">
+                <input type="email" class="form-control" id="emailsubscribe" placeholder="Sign up for all things good" aria-label="Subscriber emailadd" aria-describedby="button-addon2">
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">></button>
+                <!-- TODO -->
+                <button onclick="storesignup()" class="btn btn-outline-secondary" type="button" id="button-addon2" id="emailsubscribe">></button>
               </div>
               </div>
             </div>
