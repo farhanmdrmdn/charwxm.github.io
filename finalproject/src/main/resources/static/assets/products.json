@@ -51,7 +51,7 @@
         {
                 "name": "Cotton Triangle Quilt",
                 "tag": "cottontrianglequilt",
-                "img": "cotton_triangle_quilt1",
+                "img": "assets/img/product/cotton_triangle_quilt1.jpeg",
                 "price": 189,
                 "inCart": 0
         },
@@ -71,8 +71,8 @@
         },
         {
                 "name": "Clare Dinner Plates Set",
-                "id": "claredinnerplateset",
-                "img": "assets/img/product/clare_dinnerplateset1/jpeg",
+                "id": "claredinnerplatesset",
+                "img": "assets/img/product/clare_dinnerplatesset1/jpeg",
                 "price": 55,
                 "inCart": 0
         },

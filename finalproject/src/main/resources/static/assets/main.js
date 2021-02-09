@@ -73,8 +73,8 @@ let products = [
         },
         {
                 name: "Clare Dinner Plates Set",
-                tag: "claredinnerplateset",
-                pic: "clare_dinnerplateset1",
+                tag: "claredinnerplatesset",
+                pic: "clare_dinnerplatesset1",
                 price: 55,
                 inCart: 0
         },
