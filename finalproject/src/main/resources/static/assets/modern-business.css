@@ -175,8 +175,9 @@ body {
 }
 
 .add-cart {
-  color:black;
-  font-style:italic;
+  color:white;
+  background-color: black;
+  border: 0;
 }
 
 /* ------Checkout Success------- */
