@@ -319,33 +319,3 @@ function storesignup(){
      var inputEmail= document.getElementById("emailsubscribe");
      localStorage.setItem("emailsubscribe", inputEmail.value);
     }
-
-// fetch data function
-
-// function fetchProductData() {
-//         fetch('product.json')
-//         .then(response => response.json())
-//         .then(users => {
-//             let output = '<h2>Shop All</h2>';
-//             output += '<ul>';
-//                 products.forEach(function(product) {
-//                     output += `
-//                 <div class="col-lg-4 col-sm-6 portfolio-item">
-//                         <div class="card h-100 border-0">
-//                                 <img class="card-img-top" src="assets/img/product/cotton_triangle_quilt1.jpeg"
-//                                 onmouseover="this.src='assets/img/product/cotton_triangle_quilt2.jpeg'"
-//                                 onmouseout="this.src='assets/img/product/cotton_triangle_quilt1.jpeg'" height="350" alt="Cotton Triangle Quilt" />
-//                                 <div class="card-body">
-//                                         <h4 class="card-title">Cotton Triangle Quilt</h4>
-//                                         <p class="item-price">
-//                                                 $189
-//                                         </p>
-//                                         <a class="add-cart cart8" href="#">Add to Cart</a>
-//                                 </div>
-//                         </div>
-//                 </div>
-//                 `;
-//                 });
-//                 output +='</ul>';
-//                 document.getElementById("products_list").innerHTML = output;
-//         });
