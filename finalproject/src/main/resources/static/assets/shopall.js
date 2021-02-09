@@ -6,6 +6,7 @@ function addProductPage() {
             // console.log(data);
             const card = "json";
             let output = "";
+            console.log("----------------------------");
             console.log(data);
             const products = JSON.stringify(data);
             var itemsInLocal = localStorage.setItem('products', products);
@@ -14,19 +15,18 @@ function addProductPage() {
             
             // alert("hello");
             for (let i = 0; i < data.length; i++) {
+
+                console.log(data[i])
                 output += `<div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
                 <a href="#"
                 ><img
                     class="card-img-top"
-                    src="..assets/img/product/${data[i].filename}"
+                    src="${data[i].img}"
                     height="350"
                 /></a>
                 <div class="card-body">
                 <h4 class="card-title">${data[i].name}</h4>
-                <p class="card-text">
-                ${data[i].description}
-                </p>
                 <p class="item-price">$${data[i].price}
                 </p>
                 <a class="add-cart cart1" href="#">Add Cart</a>
