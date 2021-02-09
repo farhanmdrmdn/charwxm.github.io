@@ -312,30 +312,13 @@ onLoadCartNumbers();
 displayCart();
 
 
-function collapsible () {
-var coll = document.getElementsByClassName("collapsible");
-var i;
+//email subscription
+// TODO
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-}
-
-// // email subscription
-// // TODO
 function storesignup(){
      var inputEmail= document.getElementById("emailsubscribe");
      localStorage.setItem("emailsubscribe", inputEmail.value);
     }
-// </script>
 
 // fetch data function
 
