@@ -7,7 +7,7 @@ function addProductPage() {
             const card = "json";
             let output = "";
             // console.log("----------------------------");
-            console.log(data);
+            // console.log(data);
             const products = JSON.stringify(data);
             var itemsInLocal = localStorage.setItem('products', products);
             var itemsInStore = localStorage.getItem('products');
@@ -15,8 +15,7 @@ function addProductPage() {
             
             // alert("hello");
             for (let i = 0; i < data.length; i++) {
-
-                console.log(data[i])
+                    // console.log(data[i])
                 output += `<div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100 border-0">
                 <img
@@ -39,8 +38,9 @@ function addProductPage() {
             </div>`
 
                 document.getElementById("card").innerHTML = output;
+                
             }
         })
 }
 
-document.onclick = addProductPage()
+document.onload = addProductPage()

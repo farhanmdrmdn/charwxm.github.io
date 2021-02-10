@@ -297,6 +297,7 @@ function manageQuantity() {
 
             delete cartItems[productName];
             localStorage.setItem('productInCart', JSON.stringify(cartItems));
+            
 
         
 
@@ -305,7 +306,7 @@ function manageQuantity() {
         })
         
     }
-    
+//     localStorage.clear();
 }
 
 onLoadCartNumbers();
