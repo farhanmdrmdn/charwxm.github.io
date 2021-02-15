@@ -1,11 +1,12 @@
 [
-  {
+        {
                 "name": "Asher Tall Shelf",
                 "id": "ashertallshelf",
                 "tag": "ashertallshelf",
                 "img": "assets/img/product/asher_tallshelf1.jpeg",
                 "img1": "assets/img/product/asher_tallshelf2.jpeg",
                 "img2": "assets/img/product/asher_tallshelf3.jpeg",
+                "pic": "asher_tallshelf1",
                 "price": 150,
                 "inCart": 0
         },

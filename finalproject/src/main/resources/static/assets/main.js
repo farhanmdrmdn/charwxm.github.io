@@ -1,5 +1,55 @@
 let carts = document.querySelectorAll('.add-cart');
 
+function addProductPage() {
+        // TODO fetch requires http or https which is only provided by spring boot.
+        fetch('assets/products.json')
+            .then((response) => response.json())
+            .then(products => {
+                
+                const card = "json";
+                let output = "";
+                // console.log("----------------------------");
+           
+                const fetchProducts = JSON.stringify(products);
+                // console.log(fetchProducts);
+                var itemsInLocal = localStorage.setItem('fetchProducts', fetchProducts);
+                var itemsInStore = localStorage.getItem('fetchProducts');
+                var productInStore = JSON.parse(itemsInStore); //resonate products
+                
+                // alert("hello");
+                for (let i = 0; i < products.length; i++) {
+                        // console.log(data[i])
+                    output += `<div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100 border-0">
+                    <img
+                        class="card-img-top"
+                        src="${products[i].img}"
+                        onmouseover="this.src='${products[i].img1}'"
+                        onmouseout="this.src='${products[i].img2}'"
+                        height="350"
+                        alt="${products[i].name}
+                        />
+                    <div class="card-body">
+                    <h4 class="card-title">${products[i].name}</h4>
+                    <p class="item-price">$${products[i].price}
+                    </p>
+                    <button type="submit" class="btn btn-primary add-cart" id="addtocart">
+                    Add to cart
+                    </button>
+                        </div>
+                    </div>
+                </div>`
+    
+                    document.getElementById("card").innerHTML = output;
+                    
+                }
+            })
+    }
+    
+    document.onload = addProductPage()
+
+
+
 let products = [
         {
                 name: "Asher Tall Shelf",
@@ -86,9 +136,8 @@ let products = [
                 inCart: 0
         }
 ];
-
+ 
 // "Add to cart" Function column
-
 for (let i = 0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
                 cartNumbers(products[i]);
