@@ -35,6 +35,23 @@ body {
   padding-top: 40px;
 }
 
+/* ------Shop all------ */
+
+.searchWrapper {
+  margin-top: 20px;
+}
+#charactersList {
+  display: inline-table;
+  width: 100%;
+}
+
+.col-sm-6x {
+  display:inline-flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+}
+
 /* ------Cart Page------- */
 
 .cartheader {
@@ -197,6 +214,7 @@ body {
 }
 
 /* ------FAQ------- */
+
 .collapsible {
   display:flex;
   background-color:black;
@@ -212,11 +230,13 @@ body {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .collapsible:hover {
   background-color: #ccc;
 }
 
 /* Style the collapsible content. Note: hidden by default */
+
 .faqcontent {
   padding: 0 18px;
   display: none;

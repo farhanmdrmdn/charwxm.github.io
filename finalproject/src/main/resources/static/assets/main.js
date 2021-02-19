@@ -1,54 +1,4 @@
-let carts = document.querySelectorAll('.add-cart');
-
-function addProductPage() {
-        // TODO fetch requires http or https which is only provided by spring boot.
-        fetch('assets/products.json')
-            .then((response) => response.json())
-            .then(products => {
-                
-                const card = "json";
-                let output = "";
-                // console.log("----------------------------");
-           
-                const fetchProducts = JSON.stringify(products);
-                // console.log(fetchProducts);
-                var itemsInLocal = localStorage.setItem('fetchProducts', fetchProducts);
-                var itemsInStore = localStorage.getItem('fetchProducts');
-                var productInStore = JSON.parse(itemsInStore); //resonate products
-                
-                // alert("hello");
-                for (let i = 0; i < products.length; i++) {
-                        // console.log(data[i])
-                    output += `<div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100 border-0">
-                    <img
-                        class="card-img-top"
-                        src="${products[i].img}"
-                        onmouseover="this.src='${products[i].img1}'"
-                        onmouseout="this.src='${products[i].img2}'"
-                        height="350"
-                        alt="${products[i].name}
-                        />
-                    <div class="card-body">
-                    <h4 class="card-title">${products[i].name}</h4>
-                    <p class="item-price">$${products[i].price}
-                    </p>
-                    <button type="submit" class="btn btn-primary add-cart" id="addtocart">
-                    Add to cart
-                    </button>
-                        </div>
-                    </div>
-                </div>`
-    
-                    document.getElementById("card").innerHTML = output;
-                    
-                }
-            })
-    }
-    
-    document.onload = addProductPage()
-
-
+// let carts = document.querySelectorAll('button#addtocart.btn.btn-primary.add-cart');
 
 let products = [
         {
@@ -128,7 +78,7 @@ let products = [
                 price: 55,
                 inCart: 0
         },
-       {
+        {
                 name: "Isabella Floor Lamp",
                 tag: "isabellafloorlamp",
                 pic: "isabella_floorlamp1",
@@ -136,14 +86,19 @@ let products = [
                 inCart: 0
         }
 ];
- 
+
+let carts = document.querySelectorAll('.add-cart');
+
 // "Add to cart" Function column
 for (let i = 0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
+                alert("pressed");
                 cartNumbers(products[i]);
                 totalCost(products[i]);
         });
 }
+
+
 
 function onLoadCartNumbers() {
         let productNumbers = localStorage.getItem('cartNumbers');
@@ -160,7 +115,7 @@ function cartNumbers(product, action) {
 
         let cartItems = localStorage.getItem('productInCart');
         cartItems = JSON.parse(cartItems);
-
+        
         if( action ) {
                 localStorage.setItem('cartNumbers', productNumbers - 1);
                 document.querySelector('.cart span').textContent = 
@@ -206,14 +161,15 @@ function totalCost(product,action) {
         
         // console.log("My cartCost is", cartCost);
         // console.log(typeof cartCost );
-
+       
         if(action) {
                 cartCost = parseInt(cartCost)
 
                 localStorage.setItem("totalCost", cartCost - product.price);
         } else if(cartCost != null) {
-
+                
                 cartCost = parseInt(cartCost);
+                
                 localStorage.setItem("totalCost", cartCost + product.price);
 
         } else {
@@ -362,10 +318,9 @@ onLoadCartNumbers();
 displayCart();
 
 
-//email subscription
-// TODO
+// Email subscription
 
 function storesignup(){
-     var inputEmail= document.getElementById("emailsubscribe");
-     localStorage.setItem("emailsubscribe", inputEmail.value);
+     var inputEmail= document.getElementById("emailSubscribe");
+     localStorage.setItem("emailSubscribe", inputEmail.value);
     }
