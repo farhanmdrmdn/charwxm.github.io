@@ -33,17 +33,6 @@
                 "inCart": 0
         },
         {
-                "name": "Reusable Canvas Lunch Bag",
-                "id": "canvaslunchbag",
-                "tag": "canvaslunchbag",
-                "img": "assets/img/product/canvas_lunchbag1.jpeg",
-                "img1": "assets/img/product/canvas_lunchbag2.jpeg",
-                "img2": "assets/img/product/canvas_lunchbag1.jpeg",
-                "pic": "canvas_lunchbag1",
-                "price": 27,
-                "inCart": 0
-        },
-        {
                 "name": "Dual Tone 3 Seater Sofa",
                 "id": "dualtone3seatersofa",
                 "tag": "dualtone3seatersofa",
@@ -52,6 +41,17 @@
                 "img2": "assets/img/product/dualtone_3seatersofa1.jpeg",
                 "pic": "dualtone_3seatersofa1",
                 "price": 399,
+                "inCart": 0
+        },
+        {
+                "name": "Reusable Canvas Lunch Bag",
+                "id": "canvaslunchbag",
+                "tag": "canvaslunchbag",
+                "img": "assets/img/product/canvas_lunchbag1.jpeg",
+                "img1": "assets/img/product/canvas_lunchbag2.jpeg",
+                "img2": "assets/img/product/canvas_lunchbag1.jpeg",
+                "pic": "canvas_lunchbag1",
+                "price": 27,
                 "inCart": 0
         },
         {

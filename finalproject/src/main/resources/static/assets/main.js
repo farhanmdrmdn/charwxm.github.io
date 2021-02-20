@@ -320,7 +320,7 @@ displayCart();
 
 // Email subscription
 
-function storesignup(){
+function storesignup() {
      var inputEmail= document.getElementById("emailSubscribe");
      localStorage.setItem("emailSubscribe", inputEmail.value);
     }

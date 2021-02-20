@@ -37,6 +37,11 @@ body {
 
 /* ------Shop all------ */
 
+.form-controlx {
+  width: 32%;
+  margin: 10px;
+}
+
 .searchWrapper {
   margin-top: 20px;
 }
