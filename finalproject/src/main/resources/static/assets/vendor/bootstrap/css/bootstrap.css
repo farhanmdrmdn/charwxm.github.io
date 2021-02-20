@@ -692,8 +692,9 @@ pre code {
 
 .col-6 {
   -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  display: inline-table;
 }
 
 .col-7 {

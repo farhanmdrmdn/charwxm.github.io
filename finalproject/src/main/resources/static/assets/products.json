@@ -1,85 +1,133 @@
-[
-  {
+[ 
+        {
                 "name": "Asher Tall Shelf",
                 "id": "ashertallshelf",
+                "tag": "ashertallshelf",
                 "img": "assets/img/product/asher_tallshelf1.jpeg",
+                "img1": "assets/img/product/asher_tallshelf2.jpeg",
+                "img2": "assets/img/product/asher_tallshelf3.jpeg",
+                "pic": "asher_tallshelf1",
                 "price": 150,
                 "inCart": 0
         },
         {
                 "name": "Axel Side Chair",
                 "id": "axelsidechair",
+                "tag": "axelsidechair",
                 "img": "assets/img/product/axel_side_chair1.jpeg",
+                "img1": "assets/img/product/axel_side_chair2.jpeg",
+                "img2": "assets/img/product/axel_side_chair3.jpeg",
+                "pic": "axel_side_chair1",
                 "price": 100,
                 "inCart": 0
         },
         {
                 "name": "Bruno Dining Table",
                 "id": "brunodiningtable",
+                "tag": "brunodiningtable",
                 "img": "assets/img/product/bruno_diningtable1.jpeg",
+                "img1": "assets/img/product/bruno_diningtable2.jpeg",
+                "img2": "assets/img/product/bruno_diningtable3.jpeg",
+                "pic": "bruno_diningtable1",
                 "price": 1040,
-                "inCart": 0
-        },
-        {
-                "name": "Reusable Canvas Lunch Bag",
-                "id": "canvaslunchbag",
-                "img": "canvas_lunchbag1",
-                "price": 27,
                 "inCart": 0
         },
         {
                 "name": "Dual Tone 3 Seater Sofa",
                 "id": "dualtone3seatersofa",
+                "tag": "dualtone3seatersofa",
                 "img": "assets/img/product/dualtone_3seatersofa1.jpeg",
+                "img1": "assets/img/product/dualtone_3seatersofa2.jpeg",
+                "img2": "assets/img/product/dualtone_3seatersofa1.jpeg",
+                "pic": "dualtone_3seatersofa1",
                 "price": 399,
+                "inCart": 0
+        },
+        {
+                "name": "Reusable Canvas Lunch Bag",
+                "id": "canvaslunchbag",
+                "tag": "canvaslunchbag",
+                "img": "assets/img/product/canvas_lunchbag1.jpeg",
+                "img1": "assets/img/product/canvas_lunchbag2.jpeg",
+                "img2": "assets/img/product/canvas_lunchbag1.jpeg",
+                "pic": "canvas_lunchbag1",
+                "price": 27,
                 "inCart": 0
         },
         {
                 "name": "Emelie Tv Console",
                 "id": "emelietvconsole",
+                "tag": "emelietvconsole",
                 "img": "assets/img/product/emelie_tvconsole1.jpeg",
+                "img1": "assets/img/product/emelie_tvconsole2.jpeg",
+                "img2": "assets/img/product/emelie_tvconsole3.jpeg",
+                "pic": "emelie_tvconsole1",
                 "price": 399,
                 "inCart": 0
         },
         {
                 "name": "Grasshoppa Floor Lamp",
                 "id": "grasshoppafloorlamp",
+                "tag": "grasshoppafloorlamp",
                 "img": "assets/img/product/grasshoppa_floorlamp1.jpeg",
+                "img1": "assets/img/product/grasshoppa_floorlamp2.jpeg",
+                "img2": "assets/img/product/grasshoppa_floorlamp3.jpeg",
+                "pic": "grasshoppa_floorlamp1",
                 "price": 149,
                 "inCart": 0
         },
         {
                 "name": "Cotton Triangle Quilt",
+                "id": "cottontrianglequilt",
                 "tag": "cottontrianglequilt",
                 "img": "assets/img/product/cotton_triangle_quilt1.jpeg",
+                "img1": "assets/img/product/cotton_triangle_quilt2.jpeg",
+                "img2": "assets/img/product/cotton_triangle_quilt1.jpeg",
+                "pic": "cotton_triangle_quilt1",
                 "price": 189,
                 "inCart": 0
         },
         {
                 "name": "Linate Coffee Table",
                 "id": "linatecoffeetable",
-                "img": "assets/img/product/asher_tallshelf1.jpeg",
+                "tag": "linatecoffeetable",
+                "img": "assets/img/product/linate_coffeetable1.jpeg",
+                "img1": "assets/img/product/linate_coffeetable2.jpeg",
+                "img2": "assets/img/product/linate_coffeetable3.jpeg",
+                "pic": "linate_coffeetable1",
                 "price": 1279,
                 "inCart": 0
         },
         {
                 "name": "Reagan Book Shelf",
                 "id": "reaganbookshelf",
+                "tag": "reaganbookshelf",
                 "img": "assets/img/product/reagan_bookshelf1.jpeg",
+                "img1": "assets/img/product/reagan_bookshelf2.jpeg",
+                "img2": "assets/img/product/reagan_bookshelf3.jpeg",
+                "pic": "reagan_bookshelf1",
                 "price": 899,
                 "inCart": 0
         },
         {
                 "name": "Clare Dinner Plates Set",
-                "id": "claredinnerplatesset",
-                "img": "assets/img/product/clare_dinnerplatesset1/jpeg",
+                "id": "claredinnerplateset",
+                "tag": "claredinnerplateset",
+                "img": "assets/img/product/clare_dinnerplatesset1.jpeg",
+                "img1": "assets/img/product/clare_dinnerplatesset2.jpeg",
+                "img2": "assets/img/product/clare_dinnerplatesset3.jpeg",
+                "pic": "clare_dinnerplatesset1",
                 "price": 55,
                 "inCart": 0
         },
         {
                 "name": "Isabella Floor Lamp",
                 "id": "isabellafloorlamp",
+                "tag": "isabellafloorlamp",
                 "img": "assets/img/product/isabella_floorlamp1.jpeg",
+                "img1": "assets/img/product/isabella_floorlamp2.jpeg",
+                "img2": "assets/img/product/isabella_floorlamp3.jpeg",
+                "pic": "isabella_floorlamp1",
                 "price": 179,
                 "inCart": 0
 

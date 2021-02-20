@@ -1,4 +1,4 @@
-let carts = document.querySelectorAll('.add-cart');
+// let carts = document.querySelectorAll('button#addtocart.btn.btn-primary.add-cart');
 
 let products = [
         {
@@ -78,7 +78,7 @@ let products = [
                 price: 55,
                 inCart: 0
         },
-       {
+        {
                 name: "Isabella Floor Lamp",
                 tag: "isabellafloorlamp",
                 pic: "isabella_floorlamp1",
@@ -87,14 +87,18 @@ let products = [
         }
 ];
 
-// "Add to cart" Function column
+let carts = document.querySelectorAll('.add-cart');
 
+// "Add to cart" Function column
 for (let i = 0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
+                alert("pressed");
                 cartNumbers(products[i]);
                 totalCost(products[i]);
         });
 }
+
+
 
 function onLoadCartNumbers() {
         let productNumbers = localStorage.getItem('cartNumbers');
@@ -111,7 +115,7 @@ function cartNumbers(product, action) {
 
         let cartItems = localStorage.getItem('productInCart');
         cartItems = JSON.parse(cartItems);
-
+        
         if( action ) {
                 localStorage.setItem('cartNumbers', productNumbers - 1);
                 document.querySelector('.cart span').textContent = 
@@ -157,14 +161,15 @@ function totalCost(product,action) {
         
         // console.log("My cartCost is", cartCost);
         // console.log(typeof cartCost );
-
+       
         if(action) {
                 cartCost = parseInt(cartCost)
 
                 localStorage.setItem("totalCost", cartCost - product.price);
         } else if(cartCost != null) {
-
+                
                 cartCost = parseInt(cartCost);
+                
                 localStorage.setItem("totalCost", cartCost + product.price);
 
         } else {
@@ -297,6 +302,7 @@ function manageQuantity() {
 
             delete cartItems[productName];
             localStorage.setItem('productInCart', JSON.stringify(cartItems));
+            
 
         
 
@@ -305,17 +311,16 @@ function manageQuantity() {
         })
         
     }
-    
+//     localStorage.clear();
 }
 
 onLoadCartNumbers();
 displayCart();
 
 
-//email subscription
-// TODO
+// Email subscription
 
-function storesignup(){
-     var inputEmail= document.getElementById("emailsubscribe");
-     localStorage.setItem("emailsubscribe", inputEmail.value);
+function storesignup() {
+     var inputEmail= document.getElementById("emailSubscribe");
+     localStorage.setItem("emailSubscribe", inputEmail.value);
     }
