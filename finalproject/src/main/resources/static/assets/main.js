@@ -322,5 +322,5 @@ displayCart();
 
 function storesignup() {
      var inputEmail= document.getElementById("emailSubscribe");
-     localStorage.setItem("emailSubscribe", inputEmail.value);
+     localStorage.setItem("emailSubscribe", "inputEmail");
     }

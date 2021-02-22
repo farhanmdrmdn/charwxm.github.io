@@ -1,7 +1,8 @@
 function addToCart(element){
     alert("added");
-    console.log(method);
-
+    // console.log(method);
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
     
 }
 
@@ -343,3 +344,7 @@ const displayProducts= (products) => {
 };
 
 loadCharacters();
+
+function hideIcon(self) {
+    self.style.backgroundImage = 'none';
+}
