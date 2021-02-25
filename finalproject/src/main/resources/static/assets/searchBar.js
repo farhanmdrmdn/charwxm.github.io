@@ -1,9 +1,8 @@
-function addToCart(element){
-    alert("added");
+function addToCart(){
+    // alert("added");
     // console.log(method);
-    let productNumbers = localStorage.getItem('cartNumbers');
-    productNumbers = parseInt(productNumbers);
     
+
 }
 
 
@@ -73,6 +72,7 @@ function cartNumbers(product, action) {
     setItems(product);
 }
 
+
 function setItems(product) {
     let cartItems = localStorage.getItem('productInCart');
     cartItems = JSON.parse(cartItems);
@@ -98,6 +98,7 @@ function setItems(product) {
     localStorage.setItem("productInCart", JSON.stringify(cartItems));
 }
 
+
 function totalCost(product,action) {
     let cartCost = localStorage.getItem('totalCost');
     
@@ -118,6 +119,7 @@ function totalCost(product,action) {
             localStorage.setItem("totalCost", product.price);
     }
 }
+
 
 // Shopping cart 
 
@@ -244,9 +246,6 @@ for(let i=0; i < removeCart.length; i++) {
 
         delete cartItems[productName];
         localStorage.setItem('productInCart', JSON.stringify(cartItems));
-        
-
-    
 
         displayCart();
         onLoadCartNumbers();
@@ -331,7 +330,7 @@ const displayProducts= (products) => {
                     <h4 class="card-title">${item.name}</h4>
                     <p class="item-price">$${item.price}
                     </p>
-                    <button data-price="${item.price}" onClick="addToCart(this)" type="submit" class="btn btn-primary add-cart" id="addtocart">
+                    <button data-searchItem="${item.id}" onClick="addToCart(this)" type="submit" class="btn btn-primary add-cart" id="addtocart">
                     Add to cart
                     </button>
                 </div>
